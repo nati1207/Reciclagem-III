@@ -109,4 +109,18 @@ Alterado 12/09
 
 Alterado 13/09
 
+-Card com pagination
+
+-responsividade do NAV na esquerda
+
+-diminuição dos textos no INDEX
+
+**** MUDA TEMA NÃO ESTÁ FUNCIONANDO NO OFFCANVA (na reponsividade do NAV)
+**** ADICIONAR O BADGE QUE FOI MUDADO NO INDEX NAS OUTRAS páginas
+**** ADICIONAR A RESPONSIVIDADE DO NAV NAS OUTRAS páginas
+planejo colocar o alert e fazer a página de contato
+------------------------------------------------------------------------------------
+
+
+
 

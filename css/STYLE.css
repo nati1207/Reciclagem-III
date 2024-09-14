@@ -39,8 +39,9 @@ article {
 .btn-transp{
 	background-color: transparent;
 	border-color: #386641 !important;
-	padding: 20px;
+	padding: 10px;
 	width: 100%;
+	font-size: 20px;
 }
 
 .btn-transp :hover {
@@ -49,7 +50,7 @@ article {
 }
 
 .btn-group-vertical{
-	width: 90%;
+	width: 100%;
 }
 
 .nav-item{
@@ -63,7 +64,7 @@ article {
 .gruda {
 	position: sticky;
 	top: 0;
-	z-index: 1;
+	z-index: 100;
 }
 
 .font-grande {
@@ -173,10 +174,15 @@ article {
 
 }
 
-#carouselExampleIndicators{
-	margin-top: 86px;
+.reciclagem-carousel{
+	margin-bottom: 430px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	font-size: 130px;
+	font-weight: 10px;
 }
-
 
 /* carrossel end */
 
@@ -184,15 +190,17 @@ article {
 /* início Cards*/
 
 .cards {
+	background-color: #1e3f26;
 	display: flex;
 	justify-content: center;
+	width: 100%;
 }
 
 .card {
 	text-align: center;
 	padding: 6px;
 	background-color: #C6A969;
-	margin: 3px 10px 3px 10px;
+	margin: 50px 10px 50px 10px;
 }
 
 .card img {
@@ -260,6 +268,29 @@ article {
 
 /* Fim Cards*/
 
+.dropdown-toggle :hover {
+	background-color: #597E52 !important;
+	border: #7BB787 !important;
+}
+
+.dropdown-menu{
+	text-align: center;
+	margin: 8px;
+	width: 95%;
+	padding: 2px 0px 2px 0px;
+}
+
+.dropdown-header{
+	color: black;
+	font-weight: 700;
+}
+.offcanvas-body{
+	padding: 0px;
+}
+
+.navbar-text-off{
+	padding: 30px;
+}
 
 footer {
 	padding: 50px;
