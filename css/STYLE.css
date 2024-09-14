@@ -1,0 +1,270 @@
+* {
+	box-sizing: border-box;
+}
+
+.navbar-brand {
+	padding-right: 23px;
+}
+
+.circulo {
+	height: 20px;
+}
+
+.icon {
+	height: 13px;
+	color: #597E52;
+	margin-top: 0px;
+	padding-left: 4px;
+	padding-right: 4px;
+	padding-bottom: 7px;
+}
+
+body {
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+	padding: 0px;
+	text-align: center;
+	font-size: 50px;
+	border: none;
+}
+
+article {
+	float: left;
+	padding: 35px;
+	font-size: 18px;
+}
+
+.btn-transp{
+	background-color: transparent;
+	border-color: #386641 !important;
+	padding: 20px;
+	width: 100%;
+}
+
+.btn-transp :hover {
+	background-color: #597E52 !important;
+	border: #7BB787 !important;
+}
+
+.btn-group-vertical{
+	width: 90%;
+}
+
+.nav-item{
+	max-height: 40px;
+}
+
+.nav-link {
+	text-align: center;
+}
+
+.gruda {
+	position: sticky;
+	top: 0;
+	z-index: 1;
+}
+
+.font-grande {
+	font-size: 80px;
+}
+
+/*início botão para doar*/
+
+/*início tooltip*/
+.custom-tooltip {
+	--bs-tooltip-bg: var(--bs-green);
+	--bs-tooltip-color: var(--bs-white);
+}
+
+/* fim tooltip*/
+
+
+.doar {
+	margin-bottom: 70px;
+	border: 0.125em solid #1A1A1A;
+	border-radius: 0.9375em;
+	box-sizing: border-box;
+	display: inline-block;
+	font-family: "Segoe UI";
+	font-size: 16px;
+	font-weight: 600;
+	line-height: normal;
+	min-height: 3.75em;
+	min-width: 0;
+	padding: 1em 2.3em;
+	text-align: center;
+	transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+}
+
+.doar:hover {
+	color: #fff;
+	border: 0.125em solid #ffffff;
+	box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+	transform: translateY(-3px);
+}
+
+/*fim botão para doar*/
+
+
+/*início MODAL*/
+
+.modal-content {
+	background: linear-gradient(40deg, #386641, #488454, #386641 70%);
+}
+
+.btn-close {
+	background-size: 25px;
+}
+
+.doe {
+
+	color: black;
+}
+
+.modal-footer button {
+	text-align: center !important;
+}
+
+/*início botão doe*/
+.btn-doe {
+	position: relative;
+	display: inline-block;
+	margin: 15px;
+	padding: 15px 30px;
+	text-align: center;
+	font-size: 18px;
+	letter-spacing: 1px;
+	text-decoration: none;
+	color: #ffffff;
+	background: transparent;
+	cursor: pointer;
+	transition: ease-out 0.5s;
+	border: 4px solid #7BB787;
+	border-radius: 10px;
+	box-shadow: inset 0 0 0 0 rgba(180, 249, 194, 0.3);
+	font-family: Georgia;
+}
+
+.btn-doe:hover {
+	color: white;
+	box-shadow: inset 0 -100px 0 0 #468352;
+}
+
+.btn-doe:active {
+	transform: scale(0.9);
+}
+
+/*fim botão doe*/
+
+/*fim MODAL*/
+
+
+/* carrossel start */
+.c-item {
+	height: 640px;
+}
+
+.c-img {
+	height: 100%;
+	object-fit: cover;
+	filter: brightness(0.3);
+
+}
+
+#carouselExampleIndicators{
+	margin-top: 86px;
+}
+
+
+/* carrossel end */
+
+
+/* início Cards*/
+
+.cards {
+	display: flex;
+	justify-content: center;
+}
+
+.card {
+	text-align: center;
+	padding: 6px;
+	background-color: #C6A969;
+	margin: 3px 10px 3px 10px;
+}
+
+.card img {
+	height: 200px;
+	object-fit: cover;
+}
+
+.card a {
+	width: 25%;
+}
+/*início botão do card*/
+.boton-elegante {
+	padding: 0px 0px;
+	border: 2px solid #597E52;
+	background-color: #597E52;
+	color: #ffffff;
+	font-size: 1rem;
+	cursor: pointer;
+	border-radius: 10px;
+	transition: all 0.4s ease;
+	outline: none;
+	position: relative;
+	overflow: hidden;
+	font-weight: bold;
+  }
+
+.boton-elegante::after {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: radial-gradient(circle,
+			rgba(137, 190, 147, 0.25) 0%,
+			rgba(70, 131, 82, 0) 70%);
+	transform: scale(0);
+	transition: transform 0.5s ease;
+	
+	color:white;
+}
+
+.boton-elegante:hover::after {
+	transform: scale(5);
+	color:white;
+}
+
+.boton-elegante:hover {
+	color:white;
+	border-color: #ffffff;
+	background: #24422A;
+}
+/*fim botão do card*/
+
+.pagination {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: auto;
+}
+
+.page-item{
+	cursor: pointer;
+}
+
+/* Fim Cards*/
+
+
+footer {
+	padding: 50px;
+	text-align: center;
+	width: 100%;
+	height: 50px;
+	display: inline-table;
+}

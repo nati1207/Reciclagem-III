@@ -1,0 +1,112 @@
+Tem algumas páginas q as cores estão bem ruins, vê se vc consegue alterar pra ficar melhor.
+
+Eu usei um site muito bom que altera a coloração das imagensinhas:
+
+SITE:
+https://www.flaticon.com/br/
+
+Simbolo de reciclagem:
+https://www.flaticon.com/br/icone-gratis/reciclando_173251?term=recicle&page=1&position=6&origin=search&related_id=173251
+
+Alterações gerais:
+
+HEADER: lixeiras no INDEX, simbolo de reciclagem colorido nos outros MODELOS
+Recomendações: N/A
+
+NAV: icones que desaparece o que você tem aberto
+Recomendações: cor do "NAV ZL LI" (linhas dos links das páginas) um tom mais clarinho que o corpo do NAV
+
+ARTICLE: nada alterado, cada página tem seu conteúdo único 
+Recomendações: colocar lista para "teleportar" para os títulos ao longo do article; colocar introdução (caso realmente necessário)
+
+FOOTER: icone de lixeira
+Recomendações: "fontes:" parecendo um link porém bonitinho: EX.: "https://www.ecycle.com.br/coleta-seletiva-lixo-organico/"-> "www.ecycle.com.br - Lixo Orgânico" 
+
+GERAL: nome simples nos arquivos (acho melhor usar só letras e sem acentos ou espaço) EX.: "simbolomarrom", "simboloamarelo", etc...
+Recomendações: Estou pegando conteúdo sobre reciclagem do "https://www.ecycle.com.br/", com algumas excessões
+
+--------------------------------
+
+Alterações de 02/04:
+
+Sobre as CORES (do plástico, foi o que eu mais mexi): eu mudei um pouco os tons de vermelho do nav, quase nada na verdade, nem dá pra perceber; outra coisa que eu mudei também foi a cor do FOOTER. Eu achei que não tava combinando aquele verde com o vermelho da página, mas seria legal manter o verde como referência pra página principal, certo? Pensando nisso, sabendo também que aquele verde com aquele vermelho não combinam muito, eu peguei uma cor "intermediária" entre os dois, usei o gradiente que achei nesse site aqui --> https://www.schemecolor.com/green-to-red-gradient.php (no caso é tipo um dourado, eu peguei a cor "#675E24")
+Eu achei que combinou mais, mantendo um tipo de referência ao verde.
+
+FOOTER: fiz essa mudança de cor ai, além de deixar link branco
+
+NAV: não mudei nada
+ideia: dei uma mexida e achei que seria legal deixar o "width: 18%;", não prejudica o texto dentro do nav e o texto no article fica mais centralizado, já que fica uma margem no outro lado também.
+
+ARTICLE: só o que fiz foi colocar o conteúdo
+ideia: isso eu não testei nem nada, mas acho que se seguir a ideia do nav, como o article fica mais no meio, dava pra colocar alguma coisa no background pra parecer menos "vazio". Tipo alguma imagem de fundo ou algo assim, uma cor mais escura pra dar impressão de "profundidade" (eu não sei do que to falando). Eu não vou achar nenhum exemplo agora, mas sabe uns blogs no blogger que tem o conteúdo no meio com uma cor só no fundo do article e o background tá ou com uma imagem ou com outra cor?
+
+---------------------------------------
+Alterações de 06/09
+
+Adição das páginas:
+
+Lixo eletrônico
+Lixo Hospitalar
+Página de contato
+Países tabela
+Vidro
+
+--------------------------------------
+Alterado 9/09
+
+Nav Preso no topo da tela (pra isso, agora o nav está fora do header; e foi adcionado a Div: "gruda")
+Carousel dos lixos adicionado (necessário ainda a mudança do conteúdo escrito)
+
+--------------------------------------
+Alterado 10/09
+- Nav mudado (veja se ficou bom)
+    agora as páginas dos lixos ficam no dropdown "coleta seletiva" pra não ficar um monte de página no nav
+- Mudança de tema atualizada
+    o tema escuro do das páginas combina com o claro (se quiser mudar as cores, tá lá no javascript, na função verificarPagina)
+- Não é uma alteração, mas eu não sei como deixar o carrossel encostando certinho nos cantos kkkk desculpa
+
+- coloquei a badge mostrando onde o indivíduo tá, não sei se ficou bom, ficou estranho
+- figure, só não consegui mudar a cor do caption por algum motivo
+- list group no index
+- não sei fazer tooltip nem o alert, tá um meio código no index que eu tentei fazer alguma coisa 👍
+----------------------------------------
+
+Alterado 11/09 17:00
+(Tais alterações só foram feitas no index e no Lixo Orgânico (consequentemente no STYLE, main e dark .CSS))
+
+-Agora o STYLE.css está sendo utilizado.
+    No "main" e "Dark" .CSS só estão as cores que são alteradas (essas cores não são especificadas no STYLE.css, apenas no "main" e "Dark")
+    
+-Eu diminui o tamanho do Badge de localização
+
+-Botões bonitos no Doe (ele muda de cor (de fundo e do hover) junto com o tema)
+
+22:30
+-botão "Quer ajudar o meio ambiente?"
+
+-modal Doe bonitinho
+
+-Conteúdo escrito no Carousel
+
+00:40
+-tooltip no modal "Quer ajudar o meio ambiente?"
+
+-button group no nav (da meio errado na responsividade)
+
+-OffCanvas quando aperta no símbolo verde de reciclagem (como se fosse um home) com button group nele (tem que arrumar)
+-----------------------------------------------------------------------------------
+
+Alterado 12/09
+
+-2 cards adicionados
+
+-responsividade do nav agora abre um OffCanvas da direita (só colocar "start" ao invés de "end" nas classes pra colocar na esquerda)
+
+- necessário ajuste do nav, "mudar tema" está na posição errada
+
+*planejo deixar o index sem muita informação textual (deixar o texto para os lixos específicos), então é legal colocar um monte de coisa. 
+----------------------------------------------------------------------------------
+
+Alterado 13/09
+
+
