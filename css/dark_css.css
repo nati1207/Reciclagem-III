@@ -1,0 +1,50 @@
+
+body {
+	background-color: #1b1b1b;
+}
+
+header {
+	background-color: #1b1b1b;
+	color: #bdbdbd;
+}
+article {
+	background-color: #000000;
+	color: #dddddd;
+}
+
+/* navbar start */
+nav {
+	background-color: #000000;
+}
+.nav-link, .nav-item, .btn-transp{
+	color: #bdbdbd;
+}
+.nav-link, .nav-item:hover {
+	color: #ddd;
+}
+.active {
+	color: #ddd;
+}
+.navbar-brand {
+	color: #dddf;
+}
+.navbar-brand:hover {
+	color: #fff;
+}
+.nav-link.active {
+	color: #fff !important;
+}
+/* navbar end */
+
+.doar{
+	background-color: #445f3e;
+}
+
+.doar:hover {
+	background-color: #597E52;
+   }
+
+footer {
+	background-color: #1b1b1b;
+	color: white;
+}
