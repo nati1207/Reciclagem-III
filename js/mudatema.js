@@ -71,7 +71,7 @@ document.addEventListener('DOMContentLoaded', () => {
         const caminhoAtual = window.location.pathname;
         const nomePagina = caminhoAtual.split('/').pop();
 
-        if (nomePagina === 'Index.html') {
+        if (nomePagina === 'index.html') {
             if (escuro) {
                 tema.textContent = `
             body, article {
