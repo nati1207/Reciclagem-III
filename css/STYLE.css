@@ -8,16 +8,31 @@
 
 .circulo {
 	height: 20px;
+	width: 20px;
 }
 
 .icon {
 	height: 13px;
 	color: #597E52;
-	margin-top: 0px;
-	padding-left: 4px;
-	padding-right: 4px;
-	padding-bottom: 7px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin: 3.6px 0px 0px 4.8px;
 }
+
+.alert-dismissible{
+	color: #fff;
+	padding: 10px 50px 10px 12px;
+	margin: 0px 20px 0px 0px;
+}
+
+.alert-dismissible .btn-close { /*botão de fechar alert*/
+    position: absolute;
+    z-index: 1;
+    padding: 14px;
+	background-size: 17px;
+}
+
 
 body {
 	font-family: Arial, Helvetica, sans-serif;
@@ -81,7 +96,6 @@ article {
 
 /* fim tooltip*/
 
-
 .doar {
 	margin-bottom: 70px;
 	border: 0.125em solid #1A1A1A;
@@ -115,8 +129,8 @@ article {
 	background: linear-gradient(40deg, #386641, #488454, #386641 70%);
 }
 
-.btn-close {
-	background-size: 25px;
+.fecha-modal{
+	background-size: 30px;
 }
 
 .doe {
@@ -174,14 +188,21 @@ article {
 
 }
 
+
 .reciclagem-carousel{
-	margin-bottom: 430px;
 	display: flex;
 	align-items: center;
 	justify-content: center;
 	text-align: center;
 	font-size: 130px;
 	font-weight: 10px;
+}
+
+@media (max-width: 750px) {
+	.reciclagem-carousel{
+		font-size: 85px;
+		font-weight: 10px;
+	}
 }
 
 /* carrossel end */
@@ -274,10 +295,15 @@ article {
 }
 
 .dropdown-menu{
+	color: #fff;
 	text-align: center;
 	margin: 8px;
 	width: 95%;
 	padding: 2px 0px 2px 0px;
+}
+
+.btn-transp :hover{
+	color: #fff !important;
 }
 
 .dropdown-header{
@@ -288,8 +314,25 @@ article {
 	padding: 0px;
 }
 
+
 .navbar-text-off{
 	padding: 30px;
+}
+
+.breadcrumb{
+	justify-content: end;
+}
+
+.breadcrumb-item a{
+	color: #00ca28;
+}
+
+.breadcrumb-item+.breadcrumb-item::before{
+	color: #fff;
+}
+
+.breadcrumb-item.active{
+	color: #fff;
 }
 
 footer {

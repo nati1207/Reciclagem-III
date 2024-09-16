@@ -1,162 +1,335 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<title>Reciclagem - vidro</title>
-		<meta charset="utf-8">
-	    <meta charset="UTF-8">
-	    <meta name="description" content="content">
-	    <meta name="keywords" content="keywords">
-	    <meta name="author" content="Evelyn e Natalia">
-	    <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="css/bootstrap.min.css">	
-        <link id="theme-stylesheet" rel="stylesheet" href="css/main_css.css">
-		<style id="cores">
-			body, article {
-			  background-color: #dcf3d8;
-			  color: #030f01;
-			}
-			header, footer {
-			  background-color: #45803a;
-			  color: white;
-			}
-			nav {
-			  background: #6cb95d;
-			}
-		</style>
-	</head>
-	<body>
-		<div class="gruda">
-			<nav class="navbar navbar-expand-md" style= "padding: 0px;">
-				<div class="container-fluid">
 
-					<a class="navbar-brand" href="Index.html">
-						<img src="img/simboloverde.png" height="60">&nbsp;&nbsp;Reciclagem</a>
+<head>
+	<title>Reciclagem - vidro</title>
+	<meta charset="utf-8">
+	<meta charset="UTF-8">
+	<meta name="description" content="content">
+	<meta name="keywords" content="keywords">
+	<meta name="author" content="Evelyn e Natalia">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link id="theme-stylesheet" rel="stylesheet" href="css/main_css.css">
+	<link rel="stylesheet" href="css/STYLE.css">
 
-					<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" 
-						aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+	<style id="cores">
+		body,
+		article {
+			background-color: #dcf3d8;
+			color: #030f01;
+		}
 
-						<span class="navbar-toggler-icon"></span>
-					</button>
+		header,
+		footer {
+			background-color: #45803a;
+			color: white;
+		}
 
-					<div class="collapse navbar-collapse" id="navbarText">
+		nav {
+			background: #6cb95d;
+		}
 
-						<ul class="navbar-nav me-auto mb-2 mb-lg-0">
-							<li class="nav-item dropdown">
-								<a class="nav-link active dropdown-toggle dropdown-toggle-split" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-									Coleta Seletiva
-								</a>
-								<ul class="dropdown-menu">
-									<li><h6 class="dropdown-header">Recicláveis</h6></li>
-									<li><a class="dropdown-item" href="papel.html"><img src="img/papel.png" height="23">&nbsp;Papel</a></li>
-									<li><a class="dropdown-item" href="plastico.html"><img src="img/plastico.png" height="23">&nbsp;Plástico</a></li>
-									<li><a class="dropdown-item" href="vidro.html"><img src="img/papel.png" height="23">
+		.list-group,
+		.list-group-flush,
+		.list-group-item {
+			background-color: #dcf3d8 !important;
+		}
+	</style>
+</head>
+
+<body>
+	<div class="gruda">
+		<nav class="navbar navbar-expand-md" style="padding: 0px;">
+			<div class="container-fluid">
+
+				<a class="navbar-brand" href="Index.html">
+					<img src="img/simboloverde.png" height="60">&nbsp;&nbsp;Reciclagem</a>
+
+				<button class="navbar-toggler navbar-dark" type="button" data-bs-toggle="offcanvas"
+					data-bs-target="#offcanvasExample" aria-controls="offcanvasExample" aria-expanded="false"
+					aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+
+				<div class="collapse navbar-collapse" id="navbarText">
+
+					<ul class="navbar-nav me-auto mb-2 mb-lg-0">
+						<li class="nav-item dropdown">
+							<a class="nav-link active dropdown-toggle dropdown-toggle-split" href="#" role="button"
+								data-bs-toggle="dropdown" aria-expanded="false">
+								Coleta Seletiva
+							</a>
+							<ul class="dropdown-menu">
+								<li>
+									<h6 class="dropdown-header">Recicláveis</h6>
+								</li>
+								<li><a class="dropdown-item" href="papel.html"><img src="img/papel.png"
+											height="23">&nbsp;Papel</a></li>
+								<li><a class="dropdown-item" href="plastico.html"><img src="img/plastico.png"
+											height="23">&nbsp;Plástico</a></li>
+								<li><a class="dropdown-item" href="vidro.html"><img src="img/papel.png" height="23">
 										&nbsp;Vidro&nbsp;
-										<span class="position-absolute bg-light rounded-circle">
-											<i style="color: black; padding-left: 6px; padding-right: 6px;" class="fa-solid fa-location-dot"></i>
+										<span class="circulo position-absolute bg-light rounded-circle"> <!--BADGE-->
+											<i class="icon fa-solid fa-location-dot"></i>
 										</span>
 									</a></li>
-									<li><a class="dropdown-item" href="metal.html"><img src="img/metal.png" height="23">&nbsp;Metal</a></li>
-									<li><a class="dropdown-item" href="eletronico.html"><img src="img/papel.png" height="23">&nbsp;Eletrônico</a></li>
-									<li><a class="dropdown-item" href="lixoorganico.html"><img src="img/comida.png" height="23">&nbsp;Orgânico</a></li>
-									<li><hr class="dropdown-divider"></li>
-									<li><h6 class="dropdown-header">Não-recicláveis</h6></li>
-									<li><a class="dropdown-item" href="hospitalar.html"><img src="img/papel.png" height="23">&nbsp;Hospitalar</a></li>
-								</ul>
-							</li>
+								<li><a class="dropdown-item" href="metal.html"><img src="img/metal.png"
+											height="23">&nbsp;Metal</a></li>
+								<li><a class="dropdown-item" href="eletronico.html"><img src="img/papel.png"
+											height="23">&nbsp;Eletrônico</a></li>
+								<li><a class="dropdown-item" href="lixoorganico.html"><img src="img/comida.png"
+											height="23">&nbsp;Orgânico</a></li>
+								<li>
+									<hr class="dropdown-divider">
+								</li>
+								<li>
+									<h6 class="dropdown-header">Não-recicláveis</h6>
+								</li>
+								<li><a class="dropdown-item" href="hospitalar.html"><img src="img/papel.png"
+											height="23">&nbsp;Hospitalar</a></li>
+							</ul>
+						</li>
 
-							<li class="nav-item">
-								<a class="nav-link active" href="paises.html">Impacto do lixo</a>
-							</li>
+						<li class="nav-item">
+							<a class="nav-link active" href="paises.html">Impacto do lixo</a>
+						</li>
 
-							<li class="nav-item">
-								<a class="nav-link" href="contato.html">Contato</a>
+						<li class="nav-item">
+							<a class="nav-link" href="contato.html">Contato</a>
+						</li>
+					</ul>
+					<span class="navbar-text">
+						<button type="button" class="btn btn-light mudar-tema">
+							Mudar tema
+						</button>
+					</span>
+
+				</div>
+			</div>
+		</nav>
+	</div>
+	<header style="text-align: center; padding: 10px;">
+		<p>
+		<h1 Div style="font-size: 75px">Vidro tem q por conteudo</h1>
+		<img src="img/simboloamarelo.png" height="100">
+		</p>
+	</header>
+
+	<section>
+
+
+		<!--OFFCANVAS-->
+
+		<div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample"
+			aria-labelledby="offcanvasExampleLabel">
+			<div class="offcanvas-header">
+				<h5 class="offcanvas-title" id="offcanvasExampleLabel">
+					<a class="navbar-brand  position-relative" href="index.html">
+						<img src="img/simboloverde.png" height="60"> &nbsp;&nbsp;Reciclagem
+					</a>
+				</h5>
+				<button type="button" class="btn-close fecha-offcanvas" data-bs-dismiss="offcanvas"
+					aria-label="Close"></button>
+			</div>
+			<div class="offcanvas-body">
+				<div class="btn-group-vertical" role="group" aria-label="Vertical button group">
+					<div class="btn-transp">
+						<button type="button" class="btn btn-transp">
+							<a class="nav-link" href="paises.html">Impacto do lixo</a>
+						</button>
+					</div>
+
+					<div class="btn-transp">
+						<button type="button" class="btn btn-transp">
+							<a class="nav-link" href="contato.html">Contato</a>
+						</button>
+					</div>
+
+					<div class="btn-transp">
+						<button type="button" class="btn btn-transp dropdown-toggle" data-bs-toggle="dropdown"
+							aria-expanded="true">
+							Coleta Seletiva
+						</button>
+						<ul class="dropdown-menu">
+							<li>
+								<h2 class="dropdown-header">Recicláveis</h2>
 							</li>
+							<li><a class="dropdown-item" href="papel.html"><img src="img/papel.png"
+										height="23">&nbsp;Papel</a></li>
+							<li><a class="dropdown-item" href="plastico.html"><img src="img/plastico.png"
+										height="23">&nbsp;Plástico</a></li>
+							<li><a class="dropdown-item" href="vidro.html"><img src="img/papel.png"
+										height="23">&nbsp;Vidro
+									<span class="circulo position-absolute bg-light rounded-circle"> <!--BADGE-->
+										<i class="icon fa-solid fa-location-dot"></i>
+									</span></a></li>
+							<li><a class="dropdown-item" href="metal.html"><img src="img/metal.png"
+										height="23">&nbsp;Metal</a></li>
+							<li><a class="dropdown-item" href="eletronico.html"><img src="img/papel.png"
+										height="23">&nbsp;Eletrônico</a></li>
+							<li><a class="dropdown-item" href="lixoorganico.html"><img src="img/comida.png"
+										height="23">&nbsp;Orgânico</a></li>
+							<li>
+								<hr class="dropdown-divider">
+							</li>
+							<li>
+								<h6 class="dropdown-header">Não-recicláveis</h6>
+							</li>
+							<li><a class="dropdown-item" href="hospitalar.html"><img src="img/papel.png"
+										height="23">&nbsp;Hospitalar</a></li>
 						</ul>
-						<span class="navbar-text">
-							<button id="theme-toggle" type="button" class="btn btn-light" onclick="alterarEstilo()">
-								Mudar tema
-							</button>
-						</span>
-
 					</div>
 				</div>
-			</nav>
+			</div>
+
+			<span class="navbar-text-off">
+				<button id="mudar-tema" type="button" class="btn btn-light mudar-tema">
+					Mudar tema
+				</button>
+			</span>
 		</div>
-		<header>
-			<p>
-				<h1 Div style="font-size: 75px">Vidro tem q por conteudo</h1>
-				<img src="img/simboloamarelo.png" height="100">
+		<!--END OFFCANVAS-->
+
+		<article>
+			<h1 id="Introd">Introdução</h1>
+
+			<p>&nbsp;&nbsp;&nbsp;&nbsp;Não podemos dizer ao certo quando o vidro foi criado, mas sua revelação é
+				atribuída
+				aos fenícios, que casualmente o descobriram há cerca de quatro mil anos, quando faziam as fogueiras na
+				praia.
+				O que se sabe com certeza é que os sírios, fenícios e babilônios já utilizavam o vidro desde 7.000 a.C.
+				No
+				Brasil, a primeira fábrica foi construída no século XVII, em Pernambuco, por artesãos. Produzindo
+				inicialmente
+				janelas, copos e frascos. Mas foi a partir do século XX, que as fábricas de vidro brasileiras começaram
+				a se
+				automatizar e processar em escala industrial o que então era feito de modo artesanal e individual.</p>
+
+			<h1 id="definicao">Definição</h1>
+			<p>&nbsp;&nbsp;&nbsp;&nbsp;O vidro é um material obtido a partir da fusão de matérias-primas, principalmente
+				minerais. Resfriado até uma condição de rigidez, sem se cristalizar. Ele também pode ser considerado um
+				material não poroso, comum e que resiste a temperaturas de até 150°C sem deformar sua estrutura. Por
+				isso pode
+				ser reutilizado várias vezes para a mesma finalidade. Por ter uma estrutura molecular amorfa, a
+				reciclagem de
+				vidro pode ser feita infinitas vezes sem perder a qualidade de origem. Mas para isso, deve ser
+				devidamente
+				separado em três cores, verde, branco e marrom. Neste processo, a coleta seletiva tem uma importância
+				fundamental.</p>
+
+			<h1 id="descartes">Descarte</h1>
+			<p>&nbsp;&nbsp;&nbsp;&nbsp;O vidro não é biodegradável e permanece na natureza por cerca de dez mil anos.
+				Por isso, o descarte desse material em locais inapropriados pode ser muito prejudicial ao meio ambiente.
 			</p>
-		</header>
+			<p>&nbsp;&nbsp;&nbsp;&nbsp;Dessa maneira, o melhor a se fazer é reciclar os materiais feitos em vidro.
+				Confira algumas vantagens na reciclagem do vidro:</p>
+			<ul>
+				<li>
+					Diminuição do volume de lixo nos aterros;
+				</li>
+				<li>
+					Reaproveitamento do vidro em 100%;
+				</li>
+				<li>
+					Para cada tonelada de vidro reciclado, gasta-se menos 70% do que se gastaria para fabricar mais
+					vidro;
+				</li>
+				<li>
+					Para cada tonelada de vidro reciclado, economiza-se 1,2 toneladas de matéria-prima.
+				</li>
+			</ul>
 
-		<section>
-		  
-		  <article>
-			<h1 id= "Introd">Introdução</h1>
-			
-			<p>&nbsp;&nbsp;&nbsp;&nbsp;A reciclagem do metal é de extrema importância para o meio ambiente. Quando reciclamos o 
-			metal ou compramos metal reciclado estamos contribuindo com o meio ambiente, pois este material deixa de ir para os 
-			aterros sanitários ou para a natureza (rios, lagos, solo, matas). Não podemos esquecer também, que a reciclagem de 
-			metal gera renda para milhares de pessoas no Brasil que atuam, principalmente, em cooperativas de catadores e 
-			recicladores de metal e outros materiais reciclados. O metal tem um alto valor para a reciclagem.</p>
-			
-			<h1 id="coleta">Coleta Seletiva</h1>
-			<p>&nbsp;&nbsp;&nbsp;&nbsp;Uma das etapas mais importantes no processo de reciclagem de metal é a separação e 
-			coleta seletiva do metal. Nas empresas, residências e outros locais existem espaços destinados ao descarte de metal.</p>
-			<p>&nbsp;&nbsp;&nbsp;&nbsp;O processo de coleta para metais difere do que para outros materiais devido ao maior 
-			valor de sucata. Como tal, é mais provável que seja vendido para estaleiros de sucata do que para o aterro. A maior 
-			fonte de sucata de metal ferroso nos EUA é de veículos de sucata. Outras fontes incluem grandes estruturas de aço, 
-			trilhos de trem, navios, equipamentos agrícolas e, é claro, sucata de consumo. A sucata pronta, que é criada no curso 
-			da fabricação de novos produtos, representa metade da oferta de sucata ferrosa.</p>
-			
-			<h1 id="reciclagem">Como é feita a Reciclagem de Metais?</h1>
+			<h1 id="reciclage">A reciclagem de vidro</h1>
+			<p>&nbsp;&nbsp;&nbsp;&nbsp;Entende-se como reciclagem de vidro, o processo industrial de derretimento de
+				resíduos
+				de vidro. Para a fabricação de novos produtos, na maior parte das vezes, embalagens. Vidros reciclados
+				são
+				misturados com matéria-prima nova, e em média as garrafas de vidro são compostas em cerca de 60% de
+				vidro
+				reciclado. Dependendo da cor, esse percentual ainda pode chegar a 90%. Dessa forma, resíduos de vidro
+				são uma
+				importante fonte de matéria-prima para a fabricação de novas embalagens de vidro.</p>
+			<p>&nbsp;&nbsp;&nbsp;&nbsp;O vidro usado em embalagens é um material totalmente reciclável, por isso quando
+				se fala
+				em reciclagem de vidro, principalmente na indústria vidreira, o assunto sempre teve um grande destaque.
+				E ganhou
+				forças nos últimos anos com grandes investimentos feitos para promover e estimular o retorno da
+				embalagem de vidro
+				como matéria-prima. O vidro pode ser reciclado várias vezes pois é feito de minerais como areia,
+				barrilha, calcário
+				e feldspato. Ao se agregar o caco na etapa de fusão de vidro, diminui-se a retirada de matéria-prima da
+				natureza.</p>
+			<p>&nbsp;&nbsp;&nbsp;&nbsp;Assim como nos demais processos de reciclagem, na reciclagem de vidro o valor do
+				material
+				reciclado tem uma ligação direta com a pureza do mesmo. Por isso, a separação inicial é confiada á
+				coleta seletiva.
+				Na prática porém, deve-se contar com a mistura dos vidros por parte da população. Sendo assim, a
+				indústria da
+				reciclagem deve contar com um processo de separação eficiente.
 
-			<h3 id="classificacao">Classificação</h3>
-			<p>&nbsp;&nbsp;&nbsp;&nbsp;A classificação envolve a separação de metais do fluxo de sucata misto ou do fluxo 
-			de resíduos de materiais múltiplos misturados. Em operações automatizadas de reciclagem, ímãs e sensores são usados ​​
-			para auxiliar na separação de materiais. No nível empresarial, os scrappers podem empregar um imã, bem como observar 
-			a cor ou o peso do material para ajudar a determinar o tipo de metal. Por exemplo, o alumínio será prateado e 
-			leve. Outras cores importantes para procurar são cobre, amarelo (para latão) e vermelho, para latão vermelho. Os 
-			raspadores irão melhorar o valor do seu material segregando o metal limpo do material sujo.</p>
-			
-			<h3 id="processamento">Processamento</h3>
-			<p>&nbsp;&nbsp;&nbsp;&nbsp;Para permitir processamento adicional, os metais são triturados. A trituração é feita 
-			para promover o processo de fusão, já que os pequenos metais triturados têm uma grande proporção de superfície para 
-			volume. Como resultado, eles podem ser derretidos usando comparativamente menos energia. Normalmente, o alumínio é 
-			convertido em pequenas folhas e o aço é transformado em blocos de aço.</p>
-			
-			<h3 id="fusao">Fusão</h3>
-			<p>&nbsp;&nbsp;&nbsp;&nbsp;A sucata é derretida em um forno grande. Cada metal é levado para um forno específico 
-			projetado para derreter esse metal em particular. Uma quantidade considerável de energia é usada nesta etapa. Ainda 
-			assim, a energia necessária para derreter e reciclar metais é muito menor do que a energia necessária para produzir 
-			metais usando matérias-primas virgens. Com base no tamanho do forno, no grau de calor do forno e no volume de metal, 
-			o derretimento pode levar de apenas alguns minutos a horas.</p>
-			
-			<h3 id="purificacao">Purificação</h3>
-			<p>&nbsp;&nbsp;&nbsp;&nbsp;A purificação é feita para garantir que o produto final seja de alta qualidade e livre 
-			de contaminantes. Um dos métodos mais comuns usados ​​para purificação é eletrólise.</p>
-			
-			<h3 id="solidificação">Solidificação</h3>
-			<p>&nbsp;&nbsp;&nbsp;&nbsp;Após a purificação, os metais derretidos são transportados pela correia transportadora 
-			para resfriar e solidificar os metais. Nesta etapa, os sucata são formados em formas específicas, como barras, 
-			que podem ser facilmente utilizadas para a produção de vários produtos de metal.</p>
-			
-			<h3 id="transporte">Transporte das barras de metal</h3>
-			<p>&nbsp;&nbsp;&nbsp;&nbsp;Uma vez que os metais são resfriados e solidificados, eles estão prontos para uso. Eles 
-			são então transportados para várias fábricas, onde são utilizados como matéria-prima para a produção de novos produtos.</p>
-			<p>&nbsp;&nbsp;&nbsp;&nbsp;Quando os produtos feitos com estas barras de metal chegam ao fim de sua vida útil, o processo de reciclagem de metal é reiniciado.<br><br></p>
-			
-		  </article>
-		</section>
+			<h1 id="importancia">Importância da reciclagem do vidro</h1>
+			<p>&nbsp;&nbsp;&nbsp;&nbsp;A reciclagem de vidro é de extrema importância para o meio ambiente. Quando
+				reciclamos o
+				vidro, ou compramos vidro reciclado, estamos contribuindo com o meio ambiente. Esse material deixa de ir
+				para os
+				aterros sanitários ou para a natureza (rios, lagos, solo, matas). Outro fator que não podemos esquecer é
+				que a
+				reciclagem de vidro serve como gerador de renda para milhares de pessoas. Que atuam principalmente em
+				cooperativas
+				de catadores e recicladores de vidro e outros materiais.</p>
+			<p>&nbsp;&nbsp;&nbsp;&nbsp;É importante ressaltar que essas características são únicas do vidro, além das
+				suas vantagens
+				como material, acrescenta-se à elas o benefício da reciclagem. Embalagens de vidro podem ser totalmente
+				reaproveitadas
+				no ciclo produtivo da reciclagem de vidro, sem nenhuma perda material. A reutilização do vidro para a
+				produção de
+				novas embalagens consome menor quantidade de energia, e emite resíduos menos particulados de CO2.
+				Contribuindo assim
+				para preservação do meio ambiente.</p>
+			<p>&nbsp;&nbsp;&nbsp;&nbsp;A reciclagem de vidro é uma atividade economicamente viável, tornando-se um nicho
+				de mercado
+				inexplorado, com grande potencial de lucratividade.</p>
 
-		<footer>
-			<p style= "text-align: left"><img src="img/lixeiraamarela.png" height="150"></p>
-		</footer>
+			<h1 id="tipos">Tipos de vidros recicláveis</h1>
+			<ul class="list-group list-group-flush">
+				<li class="list-group-item list-group-item-dark">Garrafas de sucos, refrigerantes, cervejas e outros
+					tipos de bebidas;</li>
+				<li class="list-group-item list-group-item-dark">Potes de alimentos;</li>
+				<li class="list-group-item list-group-item-dark">Cacos de vidros;</li>
+				<li class="list-group-item list-group-item-dark">Frascos de remédios;</li>
+				<li class="list-group-item list-group-item-dark">Frascos de perfumes;</li>
+				<li class="list-group-item list-group-item-dark">Vidros planos e lisos;</li>
+				<li class="list-group-item list-group-item-dark">Pára-brisas;</li>
+				<li class="list-group-item list-group-item-dark">Vidros de janelas;</li>
+				<li class="list-group-item list-group-item-dark">Pratos, tigelas e copos.</li>
 
-		  <script src="js/bootstrap.bundle.min.js"></script>
-          <script src="js/mudatema.js"></script>
-          <script src="js/all.min.js"></script>
-		
-	</body>
+
+			</ul>
+			<!--lista do bootstrap-->
+
+		</article>
+	</section>
+
+	<footer>
+		<p style="text-align: left"><img src="img/lixeiraamarela.png" height="150"></p>
+
+		<!--BREADCRUMB-->
+		<div aria-label="breadcrumb">
+			<ol class="breadcrumb">
+				<li class="breadcrumb-item"><a href="index.html">Home</a></li>
+				<li class="breadcrumb-item"><a href="paises.html">Coleta Seletiva</a></li>
+				<li class="breadcrumb-item active" aria-current="page">Lixo Vidro</li>
+			</ol>
+		</div>
+		<!--END BREADCRUMB-->
+
+	</footer>
+
+	<script src="js/bootstrap.bundle.min.js"></script>
+	<script src="js/mudatema.js"></script>
+	<script src="js/all.min.js"></script>
+
+</body>
+
 </html>
-

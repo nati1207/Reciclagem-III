@@ -1,193 +1,319 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Hospitalar</title>
-        <meta charset="utf-8">
-	    <meta charset="UTF-8">
-	    <meta name="description" content="content">
-	    <meta name="keywords" content="keywords">
-	    <meta name="author" content="Evelyn e Natalia">
-	    <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="css/bootstrap.min.css">	
-        <link id="theme-stylesheet" rel="stylesheet" href="css/main_css.css">
 
-    </head>
-    <body>
-		<div class="gruda">
-			<nav class="navbar navbar-expand-md">
-				<div class="container-fluid">
+<head>
+	<title>Hospitalar</title>
+	<meta charset="utf-8">
+	<meta charset="UTF-8">
+	<meta name="description" content="content">
+	<meta name="keywords" content="keywords">
+	<meta name="author" content="Evelyn e Natalia">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link id="theme-stylesheet" rel="stylesheet" href="css/main_css.css">
+	<link rel="stylesheet" href="css/STYLE.css">
 
-					<a class="navbar-brand" href="Index.html">
-						<img src="img/simboloverde.png" height="60">&nbsp;&nbsp;Reciclagem</a>
 
-					<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" 
-						aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+</head>
 
-						<span class="navbar-toggler-icon"></span>
-					</button>
+<body>
+	<div class="gruda">
+		<nav class="navbar navbar-expand-md">
+			<div class="container-fluid">
 
-					<div class="collapse navbar-collapse" id="navbarText">
+				<a class="navbar-brand" href="Index.html">
+					<img src="img/simboloverde.png" height="60">&nbsp;&nbsp;Reciclagem</a>
 
-						<ul class="navbar-nav me-auto mb-2 mb-lg-0">
-							<li class="nav-item dropdown">
-								<a class="nav-link active dropdown-toggle dropdown-toggle-split" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-									Coleta Seletiva
-								</a>
-								<ul class="dropdown-menu">
-									<li><h6 class="dropdown-header">Recicláveis</h6></li>
-									<li><a class="dropdown-item" href="papel.html"><img src="img/papel.png" height="23">&nbsp;Papel</a></li>
-									<li><a class="dropdown-item" href="plastico.html"><img src="img/plastico.png" height="23">&nbsp;Plástico</a></li>
-									<li><a class="dropdown-item" href="vidro.html"><img src="img/papel.png" height="23">&nbsp;Vidro</a></li>
-									<li><a class="dropdown-item" href="metal.html"><img src="img/metal.png" height="23">&nbsp;Metal</a></li>
-									<li><a class="dropdown-item" href="eletronico.html"><img src="img/papel.png" height="23">&nbsp;Eletrônico</a></li>
-									<li><a class="dropdown-item" href="lixoorganico.html"><img src="img/comida.png" height="23">&nbsp;Orgânico</a></li>
-									<li><hr class="dropdown-divider"></li>
-									<li><h6 class="dropdown-header">Não-recicláveis</h6></li>
-									<li><a class="dropdown-item" href="hospitalar.html"><img src="img/papel.png" height="23">
+				<button class="navbar-toggler navbar-dark" type="button" data-bs-toggle="offcanvas"
+					data-bs-target="#offcanvasExample" aria-controls="offcanvasExample" aria-expanded="false"
+					aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+
+				<div class="collapse navbar-collapse" id="navbarText">
+
+					<ul class="navbar-nav me-auto mb-2 mb-lg-0">
+						<li class="nav-item dropdown">
+							<a class="nav-link active dropdown-toggle dropdown-toggle-split" href="#" role="button"
+								data-bs-toggle="dropdown" aria-expanded="false">
+								Coleta Seletiva
+							</a>
+							<ul class="dropdown-menu">
+								<li>
+									<h6 class="dropdown-header">Recicláveis</h6>
+								</li>
+								<li><a class="dropdown-item" href="papel.html"><img src="img/papel.png"
+											height="23">&nbsp;Papel</a></li>
+								<li><a class="dropdown-item" href="plastico.html"><img src="img/plastico.png"
+											height="23">&nbsp;Plástico</a></li>
+								<li><a class="dropdown-item" href="vidro.html"><img src="img/papel.png"
+											height="23">&nbsp;Vidro</a></li>
+								<li><a class="dropdown-item" href="metal.html"><img src="img/metal.png"
+											height="23">&nbsp;Metal</a></li>
+								<li><a class="dropdown-item" href="eletronico.html"><img src="img/papel.png"
+											height="23">&nbsp;Eletrônico</a></li>
+								<li><a class="dropdown-item" href="lixoorganico.html"><img src="img/comida.png"
+											height="23">&nbsp;Orgânico</a></li>
+								<li>
+									<hr class="dropdown-divider">
+								</li>
+								<li>
+									<h6 class="dropdown-header">Não-recicláveis</h6>
+								</li>
+								<li><a class="dropdown-item" href="hospitalar.html"><img src="img/papel.png"
+											height="23">
 										&nbsp;Hospitalar&nbsp;
-										<span class="position-absolute bg-light rounded-circle">
-											<i style="color: black; padding-left: 6px; padding-right: 6px;" class="fa-solid fa-location-dot"></i>
+										<span class="circulo position-absolute bg-light rounded-circle"> <!--BADGE-->
+											<i class="icon fa-solid fa-location-dot"></i>
 										</span>
 									</a></li>
-								</ul>
-							</li>
+							</ul>
+						</li>
 
-							<li class="nav-item">
-								<a class="nav-link active" href="paises.html">Impacto do lixo</a>
-							</li>
+						<li class="nav-item">
+							<a class="nav-link active" href="paises.html">Impacto do lixo</a>
+						</li>
 
-							<li class="nav-item">
-								<a class="nav-link" href="contato.html">Contato</a>
-							</li>
-						</ul>
-						<span class="navbar-text">
-							<button id="theme-toggle" type="button" class="btn btn-light" onclick="alterarEstilo()">
-								Mudar tema
-							</button>
-						</span>
-
-					</div>
+						<li class="nav-item">
+							<a class="nav-link" href="contato.html">Contato</a>
+						</li>
+					</ul>
+					<span class="navbar-text">
+						<button type="button" class="btn btn-light mudar-tema">
+							Mudar tema
+						</button>
+					</span>
 
 				</div>
-			</nav>
+
+			</div>
+		</nav>
+	</div>
+	<header>
+		<p style="text-align: center; padding: 10px;">
+		<h1 Div style="font-size: 75px">Lixo hospitalar</h1>
+		<img src="img/Lixeiras.png" height="120">tem que mudar isso aq
+		</p>
+	</header>
+	<section>
+
+		<!--OFFCANVAS-->
+
+		<div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample"
+			aria-labelledby="offcanvasExampleLabel">
+			<div class="offcanvas-header">
+				<h5 class="offcanvas-title" id="offcanvasExampleLabel">
+					<a class="navbar-brand  position-relative" href="index.html">
+						<img src="img/simboloverde.png" height="60"> &nbsp;&nbsp;Reciclagem
+					</a>
+				</h5>
+				<button type="button" class="btn-close fecha-offcanvas" data-bs-dismiss="offcanvas"
+					aria-label="Close"></button>
+			</div>
+			<div class="offcanvas-body">
+				<div class="btn-group-vertical" role="group" aria-label="Vertical button group">
+					<div class="btn-transp">
+						<button type="button" class="btn btn-transp">
+							<a class="nav-link" href="paises.html">Impacto do lixo</a>
+						</button>
+					</div>
+
+					<div class="btn-transp">
+						<button type="button" class="btn btn-transp">
+							<a class="nav-link" href="contato.html">Contato</a>
+						</button>
+					</div>
+
+					<div class="btn-transp">
+						<button type="button" class="btn btn-transp dropdown-toggle" data-bs-toggle="dropdown"
+							aria-expanded="true">
+							Coleta Seletiva
+						</button>
+						<ul class="dropdown-menu">
+							<li>
+								<h2 class="dropdown-header">Recicláveis</h2>
+							</li>
+							<li><a class="dropdown-item" href="papel.html"><img src="img/papel.png"
+										height="23">&nbsp;Papel</a></li>
+							<li><a class="dropdown-item" href="plastico.html"><img src="img/plastico.png"
+										height="23">&nbsp;Plástico</a></li>
+							<li><a class="dropdown-item" href="vidro.html"><img src="img/papel.png"
+										height="23">&nbsp;Vidro</a></li>
+							<li><a class="dropdown-item" href="metal.html"><img src="img/metal.png"
+										height="23">&nbsp;Metal</a></li>
+							<li><a class="dropdown-item" href="eletronico.html"><img src="img/papel.png"
+										height="23">&nbsp;Eletrônico</a></li>
+							<li><a class="dropdown-item" href="lixoorganico.html"><img src="img/comida.png"
+										height="23">&nbsp;Orgânico</a></li>
+							<li>
+								<hr class="dropdown-divider">
+							</li>
+							<li>
+								<h6 class="dropdown-header">Não-recicláveis</h6>
+							</li>
+							<li><a class="dropdown-item" href="hospitalar.html"><img src="img/papel.png"
+										height="23">&nbsp;Hospitalar
+										<span class="circulo position-absolute bg-light rounded-circle"> <!--BADGE-->
+											<i class="icon fa-solid fa-location-dot"></i>
+										</span></a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+
+			<span class="navbar-text-off">
+				<button id="mudar-tema" type="button" class="btn btn-light mudar-tema">
+					Mudar tema
+				</button>
+			</span>
 		</div>
-        <header>
-            <p> 
-				<h1 Div style="font-size: 75px">Lixo hospitalar</h1>
-				<img src="img/Lixeiras.png" height="120">tem que mudar isso aq
-            </p>
-        </header>
-        <section>
-            <article>
-                <h1>Introdução e o texto também!!</h1>
-			<p>&nbsp;&nbsp;&nbsp;&nbsp;Reciclagem é o processo em que há a transformação do resíduo sólido que não seria aproveitado, 
-				com mudanças em seus estados físico, físico-químico ou biológico, de modo a atribuir características 
-				ao resíduo para que ele se torne novamente matéria-prima ou novos produtos, segundo a Política 
+		<!--END OFFCANVAS-->
+		<article>
+			<h1>Introdução e o texto também!!</h1>
+			<p>&nbsp;&nbsp;&nbsp;&nbsp;Reciclagem é o processo em que há a transformação do resíduo sólido que não seria
+				aproveitado,
+				com mudanças em seus estados físico, físico-químico ou biológico, de modo a atribuir características
+				ao resíduo para que ele se torne novamente matéria-prima ou novos produtos, segundo a Política
 				Nacional de Resíduos Sólidos (PNRS). </p>
 
 
-			<p>&nbsp;&nbsp;&nbsp;&nbsp;Ela faz parte dos três “R’s” ou “erres”: reciclagem, reutilização e redução. Como a reciclagem 
-				consiste em reprocessar um item, ela é diferente da reutilização (em que há apenas a utilização 
-				do item para outra função) e da redução (que consiste em diminuir o consumo de determinados produtos).</p>
+			<p>&nbsp;&nbsp;&nbsp;&nbsp;Ela faz parte dos três “R’s” ou “erres”: reciclagem, reutilização e redução. Como
+				a reciclagem
+				consiste em reprocessar um item, ela é diferente da reutilização (em que há apenas a utilização
+				do item para outra função) e da redução (que consiste em diminuir o consumo de determinados produtos).
+			</p>
 
-			<p>&nbsp;&nbsp;&nbsp;&nbsp;Mas essa “definição fria”, apesar de importante, não nos leva à origem da história nem ajuda a 
-				entender qual a importância da reciclagem. Além de se perguntar “o que é reciclagem”, você já 
+			<p>&nbsp;&nbsp;&nbsp;&nbsp;Mas essa “definição fria”, apesar de importante, não nos leva à origem da
+				história nem ajuda a
+				entender qual a importância da reciclagem. Além de se perguntar “o que é reciclagem”, você já
 				imaginou “como surgiu” a prática de reciclar as coisas? Vamos começar da origem: o lixo.<br><br> </p>
 
-				<h1 id="Origem">Origem da reciclagem</h1>
-				<p>&nbsp;&nbsp;&nbsp;&nbsp;Desde que o mundo é mundo, o lixo existe. Os nômades já descartavam os restos dos animais que 
-				caçavam e, à medida em que o homem foi ficando mais “civilizado”, a quantidade de lixo produzida por 
+			<h1 id="Origem">Origem da reciclagem</h1>
+			<p>&nbsp;&nbsp;&nbsp;&nbsp;Desde que o mundo é mundo, o lixo existe. Os nômades já descartavam os restos dos
+				animais que
+				caçavam e, à medida em que o homem foi ficando mais “civilizado”, a quantidade de lixo produzida por
 				ele também aumentou.</p>
 
-				<p>&nbsp;&nbsp;&nbsp;&nbsp;De acordo com um estudo da Universidade Estadual do Rio de Janeiro (UERJ), as civilizações antigas 
-				(como os hindus) já dispunham de sistema de esgoto, além de pavimentação nas ruas. Os israelitas, 
-				por exemplo, possuíam regras explícitas de como descartar seus excrementos e os restos dos animais 
+			<p>&nbsp;&nbsp;&nbsp;&nbsp;De acordo com um estudo da Universidade Estadual do Rio de Janeiro (UERJ), as
+				civilizações antigas
+				(como os hindus) já dispunham de sistema de esgoto, além de pavimentação nas ruas. Os israelitas,
+				por exemplo, possuíam regras explícitas de como descartar seus excrementos e os restos dos animais
 				sacrificados, bem como os cadáveres e o lixo produzido no reino.</p>
 
-				<p>&nbsp;&nbsp;&nbsp;&nbsp;Na Idade Média, sabe-se que várias cidades italianas tinham normas para a destinação de objetos e 
-				carcaças de animais, assim como a eliminação de águas paradas e a proibição de lixo e fezes nas ruas.</p>
+			<p>&nbsp;&nbsp;&nbsp;&nbsp;Na Idade Média, sabe-se que várias cidades italianas tinham normas para a
+				destinação de objetos e
+				carcaças de animais, assim como a eliminação de águas paradas e a proibição de lixo e fezes nas ruas.
+			</p>
 
-				<p>&nbsp;&nbsp;&nbsp;&nbsp;Foi também na Idade Média que surgiram os primeiros serviços de coleta de lixo. Inicialmente, estes 
-				eram prestados por particulares; mas, quando fracassavam, optava-se pelo serviço público – que era 
-				exercido pelos carrascos da cidade e seus auxiliares, tendo muitas vezes a ajuda das prostitutas.<br></p>
-				<h1 id="Oqueé">O que é reciclagem? </h1>
-				<p>&nbsp;&nbsp;&nbsp;&nbsp;Entender o que é reciclagem é simples: trata-se de pegar algo que não tem mais utilidade e 
-					transformá-lo novamente em matéria-prima para que se forme um item igual ou sem relação com 
-					o anterior. Isso é feito de várias maneiras e vemos o resultado desse processo no nosso cotidiano. </p>
+			<p>&nbsp;&nbsp;&nbsp;&nbsp;Foi também na Idade Média que surgiram os primeiros serviços de coleta de lixo.
+				Inicialmente, estes
+				eram prestados por particulares; mas, quando fracassavam, optava-se pelo serviço público – que era
+				exercido pelos carrascos da cidade e seus auxiliares, tendo muitas vezes a ajuda das prostitutas.<br>
+			</p>
+			<h1 id="Oqueé">O que é reciclagem? </h1>
+			<p>&nbsp;&nbsp;&nbsp;&nbsp;Entender o que é reciclagem é simples: trata-se de pegar algo que não tem mais
+				utilidade e
+				transformá-lo novamente em matéria-prima para que se forme um item igual ou sem relação com
+				o anterior. Isso é feito de várias maneiras e vemos o resultado desse processo no nosso cotidiano. </p>
 
-				<p>&nbsp;&nbsp;&nbsp;&nbsp;Esse é o caso de alguns bens de consumo, como latas de alumínio, papel de escritório, garrafas 
-					PET e recipientes de plástico. Esses materiais são reciclados em grandes quantidades. Aliás, a 
-					reciclagem de materiais como papel, metal e plástico era comum no início do século XX, quando muitos 
-					produtos eram reutilizados devido às crises econômicas (como a de 1929) e às guerras mundiais.</p>
+			<p>&nbsp;&nbsp;&nbsp;&nbsp;Esse é o caso de alguns bens de consumo, como latas de alumínio, papel de
+				escritório, garrafas
+				PET e recipientes de plástico. Esses materiais são reciclados em grandes quantidades. Aliás, a
+				reciclagem de materiais como papel, metal e plástico era comum no início do século XX, quando muitos
+				produtos eram reutilizados devido às crises econômicas (como a de 1929) e às guerras mundiais.</p>
 
-				<p>&nbsp;&nbsp;&nbsp;&nbsp;Na década de 1940, produtos como o náilon, a borracha, papel e muitos metais eram racionados e 
-					reciclados, para ajudar a suportar o esforço da Segunda Guerra Mundial (1939-1944). </p>
+			<p>&nbsp;&nbsp;&nbsp;&nbsp;Na década de 1940, produtos como o náilon, a borracha, papel e muitos metais eram
+				racionados e
+				reciclados, para ajudar a suportar o esforço da Segunda Guerra Mundial (1939-1944). </p>
 
-				<p>&nbsp;&nbsp;&nbsp;&nbsp;Após esse período de recessão, países como os EUA viveram momentos de grande prosperidade econômica 
-					que impulsionaram uma cultura de consumo e desperdício. No caso da Europa – que ficou praticamente 
-					destruída após a guerra –, a implantação do Plano Marshall (que estabelecia ajuda de 17 bilhões de 
-					dólares dada pelos EUA a países devastados pela guerra) ajudou a reconstrução econômica de nações 
-					como Inglaterra, França, Alemanha e Itália. </p>
+			<p>&nbsp;&nbsp;&nbsp;&nbsp;Após esse período de recessão, países como os EUA viveram momentos de grande
+				prosperidade econômica
+				que impulsionaram uma cultura de consumo e desperdício. No caso da Europa – que ficou praticamente
+				destruída após a guerra –, a implantação do Plano Marshall (que estabelecia ajuda de 17 bilhões de
+				dólares dada pelos EUA a países devastados pela guerra) ajudou a reconstrução econômica de nações
+				como Inglaterra, França, Alemanha e Itália. </p>
 
-				<p>&nbsp;&nbsp;&nbsp;&nbsp;Dessa forma, tanto Estados Unidos como os países da Europa viveriam anos de colaboração comercial 
-					que trariam novamente êxito econômico, contribuindo muito para uma sequência de décadas de 
-					abundância na fabricação de bens de consumo. Sendo assim, foi só nos anos 1970 que a reciclagem 
-					voltou a fazer parte das discussões sociais. Nessa época, destaca-se a criação do Dia da Terra, 
-					para a criação de uma agenda ambiental.</p>
+			<p>&nbsp;&nbsp;&nbsp;&nbsp;Dessa forma, tanto Estados Unidos como os países da Europa viveriam anos de
+				colaboração comercial
+				que trariam novamente êxito econômico, contribuindo muito para uma sequência de décadas de
+				abundância na fabricação de bens de consumo. Sendo assim, foi só nos anos 1970 que a reciclagem
+				voltou a fazer parte das discussões sociais. Nessa época, destaca-se a criação do Dia da Terra,
+				para a criação de uma agenda ambiental.</p>
 
-				<h1 id="Como">Como reciclar? </h1>
-				<p>&nbsp;&nbsp;&nbsp;&nbsp;Existem várias formas de destinar seu lixo para reciclagem. Em princípio, é preciso saber se o 
-					produto é reciclável, informação que vai estar contida na embalagem por meio do símbolo internacional 
-					da reciclagem (três setas que formam um triângulo). Assim, basta descartá-lo de forma correta nos 
-					cestos apropriados.</p>
+			<h1 id="Como">Como reciclar? </h1>
+			<p>&nbsp;&nbsp;&nbsp;&nbsp;Existem várias formas de destinar seu lixo para reciclagem. Em princípio, é
+				preciso saber se o
+				produto é reciclável, informação que vai estar contida na embalagem por meio do símbolo internacional
+				da reciclagem (três setas que formam um triângulo). Assim, basta descartá-lo de forma correta nos
+				cestos apropriados.</p>
 
-				<p>&nbsp;&nbsp;&nbsp;&nbsp;Porém, nem todos os bairros, condomínios e casas possuem serviço de coleta seletiva e muitas vezes 
-					o descarte pode ser feito por meio de centros ou empresas de reciclagem independentes (veja como 
-					localizar postos de reciclagem próximos à sua residência). Em outras ocasiões, a prefeitura municipal 
-					se encarrega desse serviço. Além disso, vale ressaltar que o avanço tecnológico pode fazer com que um 
-					item que atualmente não é reciclável, torne-se reciclável no futuro.</p>
+			<p>&nbsp;&nbsp;&nbsp;&nbsp;Porém, nem todos os bairros, condomínios e casas possuem serviço de coleta
+				seletiva e muitas vezes
+				o descarte pode ser feito por meio de centros ou empresas de reciclagem independentes (veja como
+				localizar postos de reciclagem próximos à sua residência). Em outras ocasiões, a prefeitura municipal
+				se encarrega desse serviço. Além disso, vale ressaltar que o avanço tecnológico pode fazer com que um
+				item que atualmente não é reciclável, torne-se reciclável no futuro.</p>
 
-				<p>&nbsp;&nbsp;&nbsp;&nbsp;Também é importante dizer que cada resíduo possui uma cor específica que estão nas lixeiras de 
-					reciclagem. Isso serve para facilitar o processo de separação do lixo.</p>
+			<p>&nbsp;&nbsp;&nbsp;&nbsp;Também é importante dizer que cada resíduo possui uma cor específica que estão
+				nas lixeiras de
+				reciclagem. Isso serve para facilitar o processo de separação do lixo.</p>
 
 
-					<h1 id="Cores">Cores da coleta seletiva </h1>
-					<p>&nbsp;&nbsp;&nbsp;&nbsp;Em algumas cidades, a coleta seletiva é feita entre itens úmidos e secos, ou entre recicláveis 
-					e orgânicos. Quando o material reciclável é coletado e chega às cooperativas, ele é separado para ser reaproveitado. Você 
-					sabe o que é reciclagem? Para saber mais sobre esse tema dê uma olhada na matéria: “Reciclagem: o que é e qual a importância?“. </p>
+			<h1 id="Cores">Cores da coleta seletiva </h1>
+			<p>&nbsp;&nbsp;&nbsp;&nbsp;Em algumas cidades, a coleta seletiva é feita entre itens úmidos e secos, ou
+				entre recicláveis
+				e orgânicos. Quando o material reciclável é coletado e chega às cooperativas, ele é separado para ser
+				reaproveitado. Você
+				sabe o que é reciclagem? Para saber mais sobre esse tema dê uma olhada na matéria: “Reciclagem: o que é
+				e qual a importância?“. </p>
 
-						<h1 id="Separação">Separação de lixo </h1>
-					<p>	Separação de lixo: como fazer corretamente<p>
-					<p>&nbsp;&nbsp;&nbsp;&nbsp;Mas há muitos locais, como espaços públicos, comércios e condomínios, que têm lixeiras para coleta 
-						seletiva e aceitam recicláveis mediante a separação prévia feita pelo consumidor. Assim, o usuário 
-						deve depositar o resíduo nas lixeiras de cores correspondentes. Entretanto, em algumas cidades a 
-						prefeitura não oferece serviço de coleta seletiva, mas é possível reciclar ainda assim! Confira quais 
-						são os primeiros cinco passos para começar a reciclar.</p>
+			<h1 id="Separação">Separação de lixo </h1>
+			<p> Separação de lixo: como fazer corretamente
+			<p>
+			<p>&nbsp;&nbsp;&nbsp;&nbsp;Mas há muitos locais, como espaços públicos, comércios e condomínios, que têm
+				lixeiras para coleta
+				seletiva e aceitam recicláveis mediante a separação prévia feita pelo consumidor. Assim, o usuário
+				deve depositar o resíduo nas lixeiras de cores correspondentes. Entretanto, em algumas cidades a
+				prefeitura não oferece serviço de coleta seletiva, mas é possível reciclar ainda assim! Confira quais
+				são os primeiros cinco passos para começar a reciclar.</p>
 
-					<p>&nbsp;&nbsp;&nbsp;&nbsp;Sabia que, segundo resolução do Conselho Nacional do Meio Ambiente (CONAMA), existem dez cores de 
-						lixeiras para cada material/tipo de resíduo? Dê uma olhada nas informações abaixo sobre as cores da 
-						coleta seletiva:</p>
-					<ul>
-					<li>AZUL: papel/papelão;</li>
-					<li>VERMELHO: plástico;</li>
-					<li>VERDE: vidro;</li>
-					<li>AMARELO: metal;</li>
-					<li>PRETO: madeira;</li>
-					<li>LARANJA: resíduos perigosos (como pilhas, baterias e produtos químicos);</li>
-					<li>BRANCO: resíduos ambulatoriais e de serviços de saúde;</li>
-					<li>ROXO: resíduos radioativos;</li>
-					<li>MARROM: lixo orgânico;</li>
-					<li>CINZA: lixo não reciclável, contaminado ou cuja separação não é possível.</li>
-					</ul>
-            </article>
-        </section>
+			<p>&nbsp;&nbsp;&nbsp;&nbsp;Sabia que, segundo resolução do Conselho Nacional do Meio Ambiente (CONAMA),
+				existem dez cores de
+				lixeiras para cada material/tipo de resíduo? Dê uma olhada nas informações abaixo sobre as cores da
+				coleta seletiva:</p>
+			<ul>
+				<li>AZUL: papel/papelão;</li>
+				<li>VERMELHO: plástico;</li>
+				<li>VERDE: vidro;</li>
+				<li>AMARELO: metal;</li>
+				<li>PRETO: madeira;</li>
+				<li>LARANJA: resíduos perigosos (como pilhas, baterias e produtos químicos);</li>
+				<li>BRANCO: resíduos ambulatoriais e de serviços de saúde;</li>
+				<li>ROXO: resíduos radioativos;</li>
+				<li>MARROM: lixo orgânico;</li>
+				<li>CINZA: lixo não reciclável, contaminado ou cuja separação não é possível.</li>
+			</ul>
+		</article>
+	</section>
 
-		<footer>
-			<p style= "text-align: left"><img src="img/lixeiraverde.png" height="150">isso aqui também!!!</p>
-		</footer>
+	<footer>
+		<p style="text-align: left"><img src="img/lixeiraverde.png" height="150">isso aqui também!!!</p>
 
-          <script src="js/bootstrap.bundle.min.js"></script>
-          <script src="js/mudatema.js"></script>
-          <script src="js/all.min.js"></script>
-    </body>
+		<!--BREADCRUMB-->
+		<div aria-label="breadcrumb">
+			<ol class="breadcrumb">
+				<li class="breadcrumb-item"><a href="index.html">Home</a></li>
+				<li class="breadcrumb-item"><a href="paises.html">Coleta Seletiva</a></li>
+				<li class="breadcrumb-item active" aria-current="page">Lixo Hospitalar</li>
+			</ol>
+		</div>
+		<!--END BREADCRUMB-->
+
+	</footer>
+
+	<script src="js/bootstrap.bundle.min.js"></script>
+	<script src="js/mudatema.js"></script>
+	<script src="js/all.min.js"></script>
+</body>
+
 </html>

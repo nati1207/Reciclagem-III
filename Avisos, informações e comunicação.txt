@@ -120,7 +120,12 @@ Alterado 13/09
 **** ADICIONAR A RESPONSIVIDADE DO NAV NAS OUTRAS páginas
 planejo colocar o alert e fazer a página de contato
 ------------------------------------------------------------------------------------
+ 
+ Alterado 15/09
 
+ Alert de mudar tema
+ Cor do resto das páginas de coleta seletiva
+ start offcanvas em todas as páginas com o Badge certo
 
 
 

@@ -1,4 +1,8 @@
 
+.alert-dismissible{
+	background-color: #6f846b;
+}
+
 body {
 	background-color: #1b1b1b;
 }
@@ -13,6 +17,10 @@ article {
 }
 
 /* navbar start */
+h6.dropdown-header{
+	color: #fff;
+}
+
 nav {
 	background-color: #000000;
 }
@@ -36,6 +44,10 @@ nav {
 }
 /* navbar end */
 
+.figure-caption{
+	color: #fff;
+}
+
 .doar{
 	background-color: #445f3e;
 }
@@ -43,6 +55,10 @@ nav {
 .doar:hover {
 	background-color: #597E52;
    }
+
+.offcanvas{
+	background-color: #1b1b1b;
+}
 
 footer {
 	background-color: #1b1b1b;

@@ -1,177 +1,307 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<title>Reciclagem - papel</title>
-		<meta charset="utf-8">
-	    <meta charset="UTF-8">
-	    <meta name="description" content="content">
-	    <meta name="keywords" content="keywords">
-	    <meta name="author" content="Evelyn e Natalia">
-	    <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="css/bootstrap.min.css">	
-        <link id="theme-stylesheet" rel="stylesheet" href="css/main_css.css">
 
-		<style id="cores">
-			body, article {
-			  background-color: #F6F4EB
-			}
-			header, footer {
-			  background-color: #4682A9;
-			  color: white;
-			}
-			nav {
-			  background: #72a7db;
-			}
-		</style>
-	</head>
-	<body>
-		<div class="gruda">
-			<nav class="navbar navbar-expand-md" style= "padding: 0px;">
-				<div class="container-fluid">
+<head>
+	<title>Reciclagem - papel</title>
+	<meta charset="utf-8">
+	<meta charset="UTF-8">
+	<meta name="description" content="content">
+	<meta name="keywords" content="keywords">
+	<meta name="author" content="Evelyn e Natalia">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link id="theme-stylesheet" rel="stylesheet" href="css/main_css.css">
+	<link rel="stylesheet" href="css/STYLE.css">
 
-					<a class="navbar-brand" href="Index.html">
-						<img src="img/simboloverde.png" height="60">&nbsp;&nbsp;Reciclagem</a>
+	<style id="cores">
+		body,
+		article {
+			background-color: #F6F4EB
+		}
 
-					<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" 
-						aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+		header,
+		footer {
+			background-color: #4682A9;
+			color: white;
+		}
 
-						<span class="navbar-toggler-icon"></span>
-					</button>
+		nav {
+			background: #72a7db;
+		}
 
-					<div class="collapse navbar-collapse" id="navbarText">
+		.list-group,
+		.list-group-flush,
+		.list-group-item {
+			background-color: #F6F4EB !important;
+		}
+	</style>
+</head>
 
-						<ul class="navbar-nav me-auto mb-2 mb-lg-0">
-							<li class="nav-item dropdown">
-								<a class="nav-link active dropdown-toggle dropdown-toggle-split" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-									Coleta Seletiva
-								</a>
-								<ul class="dropdown-menu">
-									<li><h6 class="dropdown-header">Recicláveis</h6></li>
-									<li><a class="dropdown-item" href="papel.html"><img src="img/papel.png" height="23">
+<body>
+	<div class="gruda">
+		<nav class="navbar navbar-expand-md" style="padding: 0px;">
+			<div class="container-fluid">
+
+				<a class="navbar-brand" href="Index.html">
+					<img src="img/simboloverde.png" height="60">&nbsp;&nbsp;Reciclagem</a>
+
+				<button class="navbar-toggler navbar-dark" type="button" data-bs-toggle="offcanvas"
+					data-bs-target="#offcanvasExample" aria-controls="offcanvasExample" aria-expanded="false"
+					aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+
+				<div class="collapse navbar-collapse" id="navbarText">
+
+					<ul class="navbar-nav me-auto mb-2 mb-lg-0">
+						<li class="nav-item dropdown">
+							<a class="nav-link active dropdown-toggle dropdown-toggle-split" href="#" role="button"
+								data-bs-toggle="dropdown" aria-expanded="false">
+								Coleta Seletiva
+							</a>
+							<ul class="dropdown-menu">
+								<li>
+									<h6 class="dropdown-header">Recicláveis</h6>
+								</li>
+								<li><a class="dropdown-item" href="papel.html"><img src="img/papel.png" height="23">
 										&nbsp;Papel&nbsp;
-										<span class="position-absolute bg-light rounded-circle">
-											<i style="color: black; padding-left: 6px; padding-right: 6px;" class="fa-solid fa-location-dot"></i>
+										<span class="circulo position-absolute bg-light rounded-circle"> <!--BADGE-->
+											<i class="icon fa-solid fa-location-dot"></i>
 										</span>
 									</a></li>
-									<li><a class="dropdown-item" href="plastico.html"><img src="img/plastico.png" height="23">&nbsp;Plástico</a></li>
-									<li><a class="dropdown-item" href="vidro.html"><img src="img/papel.png" height="23">&nbsp;Vidro</a></li>
-									<li><a class="dropdown-item" href="metal.html"><img src="img/metal.png" height="23">&nbsp;Metal</a></li>
-									<li><a class="dropdown-item" href="eletronico.html"><img src="img/papel.png" height="23">&nbsp;Eletrônico</a></li>
-									<li><a class="dropdown-item" href="lixoorganico.html"><img src="img/comida.png" height="23">&nbsp;Orgânico</a></li>
-									<li><hr class="dropdown-divider"></li>
-									<li><h6 class="dropdown-header">Não-recicláveis</h6></li>
-									<li><a class="dropdown-item" href="hospitalar.html"><img src="img/papel.png" height="23">&nbsp;Hospitalar</a></li>
-								</ul>
-							</li>
+								<li><a class="dropdown-item" href="plastico.html"><img src="img/plastico.png"
+											height="23">&nbsp;Plástico</a></li>
+								<li><a class="dropdown-item" href="vidro.html"><img src="img/papel.png"
+											height="23">&nbsp;Vidro</a></li>
+								<li><a class="dropdown-item" href="metal.html"><img src="img/metal.png"
+											height="23">&nbsp;Metal</a></li>
+								<li><a class="dropdown-item" href="eletronico.html"><img src="img/papel.png"
+											height="23">&nbsp;Eletrônico</a></li>
+								<li><a class="dropdown-item" href="lixoorganico.html"><img src="img/comida.png"
+											height="23">&nbsp;Orgânico</a></li>
+								<li>
+									<hr class="dropdown-divider">
+								</li>
+								<li>
+									<h6 class="dropdown-header">Não-recicláveis</h6>
+								</li>
+								<li><a class="dropdown-item" href="hospitalar.html"><img src="img/papel.png"
+											height="23">&nbsp;Hospitalar</a></li>
+							</ul>
+						</li>
 
-							<li class="nav-item">
-								<a class="nav-link active" href="paises.html">Impacto do lixo</a>
-							</li>
+						<li class="nav-item">
+							<a class="nav-link active" href="paises.html">Impacto do lixo</a>
+						</li>
 
-							<li class="nav-item">
-								<a class="nav-link" href="contato.html">Contato</a>
-							</li>
-						</ul>
-						<span class="navbar-text">
-							<button id="theme-toggle" type="button" class="btn btn-light" onclick="alterarEstilo()">
-								Mudar tema
-							</button>
-						</span>
-
-					</div>
+						<li class="nav-item">
+							<a class="nav-link" href="contato.html">Contato</a>
+						</li>
+					</ul>
+					<span class="navbar-text">
+						<button type="button" class="btn btn-light mudar-tema">
+							Mudar tema
+						</button>
+					</span>
 
 				</div>
-			</nav>
+
+			</div>
+		</nav>
+	</div>
+	<header>
+		<p style="text-align: center; padding: 10px;">
+		<h1 Div style="font-size: 75px">Papel</h1>
+		<img src="img/simboloazul.png" height="100">
+		</p>
+	</header>
+	<section>
+
+		<!--OFFCANVAS-->
+
+		<div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample"
+			aria-labelledby="offcanvasExampleLabel">
+			<div class="offcanvas-header">
+				<h5 class="offcanvas-title" id="offcanvasExampleLabel">
+					<a class="navbar-brand  position-relative" href="index.html">
+						<img src="img/simboloverde.png" height="60"> &nbsp;&nbsp;Reciclagem
+					</a>
+				</h5>
+				<button type="button" class="btn-close fecha-offcanvas" data-bs-dismiss="offcanvas"
+					aria-label="Close"></button>
+			</div>
+			<div class="offcanvas-body">
+				<div class="btn-group-vertical" role="group" aria-label="Vertical button group">
+					<div class="btn-transp">
+						<button type="button" class="btn btn-transp">
+							<a class="nav-link" href="paises.html">Impacto do lixo</a>
+						</button>
+					</div>
+
+					<div class="btn-transp">
+						<button type="button" class="btn btn-transp">
+							<a class="nav-link" href="contato.html">Contato</a>
+						</button>
+					</div>
+
+					<div class="btn-transp">
+						<button type="button" class="btn btn-transp dropdown-toggle" data-bs-toggle="dropdown"
+							aria-expanded="true">
+							Coleta Seletiva
+						</button>
+						<ul class="dropdown-menu">
+							<li>
+								<h2 class="dropdown-header">Recicláveis</h2>
+							</li>
+							<li><a class="dropdown-item" href="papel.html"><img src="img/papel.png"
+										height="23">&nbsp;Papel
+										<span class="circulo position-absolute bg-light rounded-circle"> <!--BADGE-->
+											<i class="icon fa-solid fa-location-dot"></i>
+										</span></a></li>
+							<li><a class="dropdown-item" href="plastico.html"><img src="img/plastico.png"
+										height="23">&nbsp;Plástico</a></li>
+							<li><a class="dropdown-item" href="vidro.html"><img src="img/papel.png"
+										height="23">&nbsp;Vidro</a></li>
+							<li><a class="dropdown-item" href="metal.html"><img src="img/metal.png"
+										height="23">&nbsp;Metal</a></li>
+							<li><a class="dropdown-item" href="eletronico.html"><img src="img/papel.png"
+										height="23">&nbsp;Eletrônico</a></li>
+							<li><a class="dropdown-item" href="lixoorganico.html"><img src="img/comida.png"
+										height="23">&nbsp;Orgânico</a></li>
+							<li>
+								<hr class="dropdown-divider">
+							</li>
+							<li>
+								<h6 class="dropdown-header">Não-recicláveis</h6>
+							</li>
+							<li><a class="dropdown-item" href="hospitalar.html"><img src="img/papel.png"
+										height="23">&nbsp;Hospitalar</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+
+			<span class="navbar-text-off">
+				<button id="mudar-tema" type="button" class="btn btn-light mudar-tema">
+					Mudar tema
+				</button>
+			</span>
 		</div>
-		<header>
-			<p>
-				<h1 Div style="font-size: 75px">Papel</h1>
-				<img src="img/simboloazul.png" height="100">
-			</p>
-		</header>
-		<section>
-		  <article>
+		<!--END OFFCANVAS-->
+		<article>
 			<h1 id="Introd">Introdução</h1>
-			
-			<p>&nbsp;&nbsp;&nbsp;&nbsp;Um dos meios mais conhecidos de reutilização de material é a reciclagem de papel. 
-			Muitas crianças, aliás, aprendem a fazê-la em casa, criando uma folha firme e um pouco enrugada. No entanto, 
-			equipamentos e recursos profissionais transformaram o papel reciclado em um item comum no dia a dia e adequado 
-			para diversos usos.</p>
+
+			<p>&nbsp;&nbsp;&nbsp;&nbsp;Um dos meios mais conhecidos de reutilização de material é a reciclagem de papel.
+				Muitas crianças, aliás, aprendem a fazê-la em casa, criando uma folha firme e um pouco enrugada. No
+				entanto,
+				equipamentos e recursos profissionais transformaram o papel reciclado em um item comum no dia a dia e
+				adequado
+				para diversos usos.</p>
 
 			<h1>Como é feita a reciclagem de papel no Brasil?</h1>
-			
-			<p>&nbsp;&nbsp;&nbsp;&nbsp;O papel passa por diversas fases durante a reciclagem. Dividindo em tópicos para 
-			melhor entendimento, o papel passa pelos seguintes processos:</p>
+
+			<p>&nbsp;&nbsp;&nbsp;&nbsp;O papel passa por diversas fases durante a reciclagem. Dividindo em tópicos para
+				melhor entendimento, o papel passa pelos seguintes processos:</p>
 
 			<h3 id="separacao">Separação</h3>
-			<p>&nbsp;&nbsp;&nbsp;&nbsp;Depois da coleta e da seleção daquilo que pode ser reciclado, o papel passa por um 
-			controle de qualidade. É preciso ver a qualidade da origem e presença de matérias toleradas no material.</p>
+			<p>&nbsp;&nbsp;&nbsp;&nbsp;Depois da coleta e da seleção daquilo que pode ser reciclado, o papel passa por
+				um
+				controle de qualidade. É preciso ver a qualidade da origem e presença de matérias toleradas no material.
+			</p>
 
-			<p>&nbsp;&nbsp;&nbsp;&nbsp;Isso porque grande parte da população não sabe fazer corretamente a coleta seletiva. 
-			Editoras, bancas de jornais e demais empresas que trabalham com papel conseguem fazer essa seleção de maneira 
-			mais correta. No entanto, o que sai de residências e condomínios costuma ter mais problemas.</p>
+			<p>&nbsp;&nbsp;&nbsp;&nbsp;Isso porque grande parte da população não sabe fazer corretamente a coleta
+				seletiva.
+				Editoras, bancas de jornais e demais empresas que trabalham com papel conseguem fazer essa seleção de
+				maneira
+				mais correta. No entanto, o que sai de residências e condomínios costuma ter mais problemas.</p>
 
 			<h3 id="triagem">Triagem e maceração</h3>
-			<p>&nbsp;&nbsp;&nbsp;&nbsp;Agora é hora da limpeza do material. Tudo o que não for papel reciclável será retirado. 
-			Então, há 3 tipos de materiais que vão sair desse meio:</p>
+			<p>&nbsp;&nbsp;&nbsp;&nbsp;Agora é hora da limpeza do material. Tudo o que não for papel reciclável será
+				retirado.
+				Então, há 3 tipos de materiais que vão sair desse meio:</p>
+				
 
-			<ul>
-				<li>Resíduos perigosos para o equipamento ou processo de reciclagem, como metais e vidros;</li>
-				<li>Materiais que normalmente são usados com o papel, como grampos, clipes e elásticos;</li>
-				<li>Papéis impróprios para a reciclagem, como os sulfurizados, encerados ou parafinados.</li>
+			<ul class="list-group list-group-flush">
+				<li class="list-group-item list-group-item-dark">Resíduos perigosos para o equipamento ou processo de reciclagem, como metais e vidros;</li>
+				<li class="list-group-item list-group-item-dark">Materiais que normalmente são usados com o papel, como grampos, clipes e elásticos;</li>
+				<li class="list-group-item list-group-item-dark">Papéis impróprios para a reciclagem, como os sulfurizados, encerados ou parafinados.</li>
 			</ul>
-			
-			<p>&nbsp;&nbsp;&nbsp;&nbsp;Agora é hora da maceração. Como a reciclagem do papel ocorre com o reaproveitamento 
-			das fibras de celulose nos papéis usados, o material é misturado com água para que elas sejam enfraquecidas e, 
-			consequentemente, separadas.</p>
+
+			<p>&nbsp;&nbsp;&nbsp;&nbsp;Agora é hora da maceração. Como a reciclagem do papel ocorre com o
+				reaproveitamento
+				das fibras de celulose nos papéis usados, o material é misturado com água para que elas sejam
+				enfraquecidas e,
+				consequentemente, separadas.</p>
 
 			<h3 id="lavagem">Lavagem e dispersão</h3>
-			<p>&nbsp;&nbsp;&nbsp;&nbsp;A lavagem é o processo para retirar alguns dos resíduos contaminantes que ainda 
-			sobraram. A depuração é feita em crivos e a lavagem por meio de telas de plástico, em que a dimensão da rede 
-			vai diminuindo nas fases seguintes. O papel é peneirado, como no processo caseiro.</p>
+			<p>&nbsp;&nbsp;&nbsp;&nbsp;A lavagem é o processo para retirar alguns dos resíduos contaminantes que ainda
+				sobraram. A depuração é feita em crivos e a lavagem por meio de telas de plástico, em que a dimensão da
+				rede
+				vai diminuindo nas fases seguintes. O papel é peneirado, como no processo caseiro.</p>
 
-			<p>&nbsp;&nbsp;&nbsp;&nbsp;Já na dispersão, o objetivo é de diminuir o tamanho dos contaminantes que teimam em 
-			continuar. Eles, então, são dissolvidos por meio de altas temperaturas — que podem ir de 50ºC a 125ºC. Depois, 
-			esses resíduos são dispersos.</p>
+			<p>&nbsp;&nbsp;&nbsp;&nbsp;Já na dispersão, o objetivo é de diminuir o tamanho dos contaminantes que teimam
+				em
+				continuar. Eles, então, são dissolvidos por meio de altas temperaturas — que podem ir de 50ºC a 125ºC.
+				Depois,
+				esses resíduos são dispersos.</p>
 
 			<h3 id="branqueamento">Destintagem e branqueamento</h3>
-			<p>&nbsp;&nbsp;&nbsp;&nbsp;Para que o papel reciclado possa ser utilizado comercialmente, precisa perder a tinta 
-			e ficar homogêneo. Portanto, segue para o processo de destintagem, em que são utilizados alguns produtos químicos, 
-			para a retirada da tinta.</p>
+			<p>&nbsp;&nbsp;&nbsp;&nbsp;Para que o papel reciclado possa ser utilizado comercialmente, precisa perder a
+				tinta
+				e ficar homogêneo. Portanto, segue para o processo de destintagem, em que são utilizados alguns produtos
+				químicos,
+				para a retirada da tinta.</p>
 
-			<p>&nbsp;&nbsp;&nbsp;&nbsp;Mas a retirada da tinta não é suficiente: é necessário fazer o branqueamento dos resíduos. 
-			Para isso, a pasta de celulose segue para o processo de refino, em que aditivos e alvejantes são usados para clareá-la.</p>
+			<p>&nbsp;&nbsp;&nbsp;&nbsp;Mas a retirada da tinta não é suficiente: é necessário fazer o branqueamento dos
+				resíduos.
+				Para isso, a pasta de celulose segue para o processo de refino, em que aditivos e alvejantes são usados
+				para clareá-la.</p>
 
-			<p>&nbsp;&nbsp;&nbsp;&nbsp;Então, segue para o refino, em que substâncias como sulfato de alumínio e amido de 
-			mandioca podem ser acrescentados.</p>
+			<p>&nbsp;&nbsp;&nbsp;&nbsp;Então, segue para o refino, em que substâncias como sulfato de alumínio e amido
+				de
+				mandioca podem ser acrescentados.</p>
 
-			<p>&nbsp;&nbsp;&nbsp;&nbsp;A partir daí, a reciclagem do papel é semelhante à confecção com a pasta de celulose 
-			virgem, mas varia conforme o tipo de produto que se deseja fabricar:</p>
+			<p>&nbsp;&nbsp;&nbsp;&nbsp;A partir daí, a reciclagem do papel é semelhante à confecção com a pasta de
+				celulose
+				virgem, mas varia conforme o tipo de produto que se deseja fabricar:</p>
 
-			<ul>
-				<li>O vácuo retira a umidade excedente na mesa formadora;</li>
-				<li>A prensa acerta gramatura do papel, que depois passa pelos rolos secadores;</li>
-				<li>O papel chega à enroladeira, onde será formado o rolo;</li>
-				<li>O rolo é transportado por ponte rolante até a rebobinadeira;</li>
-				<li>O papel é rebobinado conforme formato da bobina;</li>
-				<li>A bobina de papel acabada vai para o controle de qualidade.</li>
+			<ul class="list-group list-group-flush">
+				<li class="list-group-item list-group-item-dark">O vácuo retira a umidade excedente na mesa formadora;</li>
+				<li class="list-group-item list-group-item-dark">A prensa acerta gramatura do papel, que depois passa pelos rolos secadores;</li>
+				<li class="list-group-item list-group-item-dark">O papel chega à enroladeira, onde será formado o rolo;</li>
+				<li class="list-group-item list-group-item-dark">O rolo é transportado por ponte rolante até a rebobinadeira;</li>
+				<li class="list-group-item list-group-item-dark">O papel é rebobinado conforme formato da bobina;</li>
+				<li class="list-group-item list-group-item-dark">A bobina de papel acabada vai para o controle de qualidade.</li>
 			</ul>
-			
-			<p>&nbsp;&nbsp;&nbsp;&nbsp;A reciclagem de papel não é sempre possível. Alguns tipos não podem ser reaproveitados, 
-			como fitas adesivas, papéis fotográficos, papel carbono, copos, etiquetas adesivas e os já citados papéis sulfurizados, 
-			encerados ou parafinados.</p>
-						
-			</article>
-		</section>
 
-		<footer>
-			<p style= "text-align: left"><img src="img/lixeiraazul.png" height="150"></p>
-		</footer>
+			<p>&nbsp;&nbsp;&nbsp;&nbsp;A reciclagem de papel não é sempre possível. Alguns tipos não podem ser
+				reaproveitados,
+				como fitas adesivas, papéis fotográficos, papel carbono, copos, etiquetas adesivas e os já citados
+				papéis sulfurizados,
+				encerados ou parafinados.</p>
 
-		  <script src="js/bootstrap.bundle.min.js"></script>
-          <script src="js/mudatema.js"></script>
-          <script src="js/all.min.js"></script>
+		</article>
+	</section>
 
-	</body>
+	<footer>
+		<p style="text-align: left"><img src="img/lixeiraazul.png" height="150"></p>
+
+		<!--BREADCRUMB-->
+		<div aria-label="breadcrumb">
+			<ol class="breadcrumb">
+				<li class="breadcrumb-item"><a href="index.html">Home</a></li>
+				<li class="breadcrumb-item"><a href="paises.html">Coleta Seletiva</a></li>
+				<li class="breadcrumb-item active" aria-current="page">Lixo Papel</li>
+			</ol>
+		</div>
+		<!--END BREADCRUMB-->
+
+	</footer>
+
+	<script src="js/bootstrap.bundle.min.js"></script>
+	<script src="js/mudatema.js"></script>
+	<script src="js/all.min.js"></script>
+
+</body>
+
 </html>
-

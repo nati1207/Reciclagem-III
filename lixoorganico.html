@@ -1,195 +1,334 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<title>Reciclagem - lixo orgânico</title>
-		<meta charset="utf-8">
-	    <meta charset="UTF-8">
-	    <meta name="description" content="content">
-	    <meta name="keywords" content="keywords">
-	    <meta name="author" content="Evelyn e Natalia">
-	    <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="css/bootstrap.min.css">	
-        <link id="theme-stylesheet" rel="stylesheet" href="css/main_css.css">
-		<link rel="stylesheet" href="css/STYLE.css">
-		<style id="cores">
-			body, article {
-			  background-color: #F5CCA0;
-			}
-			
-			header, footer {
-			  background-color: #964b00;
-			  color: white;
-			}
-			
-			nav {
-			  background: #a7521a;
-			}
-			.figure-caption {
-				color: white !important;
-			}
-		</style>
-		<!--não consegui mudar a cor do caption-->
-	</head>
-	<body>
-		<div class="gruda">
-			<nav class="navbar navbar-expand-md" style= "padding: 0px;">
-				<div class="container-fluid">
-					<a class="navbar-brand" href="Index.html">
-						<img src="img/simboloverde.png" height="60">&nbsp;&nbsp;Reciclagem
-					</a>
 
-					<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" 
-						aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+<head>
+	<title>Reciclagem - lixo orgânico</title>
+	<meta charset="utf-8">
+	<meta charset="UTF-8">
+	<meta name="description" content="content">
+	<meta name="keywords" content="keywords">
+	<meta name="author" content="Evelyn e Natalia">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link id="theme-stylesheet" rel="stylesheet" href="css/main_css.css">
+	<link rel="stylesheet" href="css/STYLE.css">
+	<style id="cores">
+		body,
+		article {
+			background-color: #F5CCA0;
+		}
 
-						<span class="navbar-toggler-icon"></span>
-					</button>
+		header,
+		footer {
+			background-color: #964b00;
+			color: white;
+		}
 
-					<div class="collapse navbar-collapse" id="navbarText">
+		nav {
+			background: #a7521a;
+		}
 
-						<ul class="navbar-nav me-auto mb-2 mb-lg-0">
-							<li class="nav-item dropdown">
-								<a class="nav-link active dropdown-toggle dropdown-toggle-split" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-									Coleta Seletiva
-								</a>
-								<ul class="dropdown-menu">
-									<li><h6 class="dropdown-header">Recicláveis</h6></li>
-									<li><a class="dropdown-item" href="papel.html"><img src="img/papel.png" height="23">&nbsp;Papel</a></li>
-									<li><a class="dropdown-item" href="plastico.html"><img src="img/plastico.png" height="23">&nbsp;Plástico</a></li>
-									<li><a class="dropdown-item" href="vidro.html"><img src="img/papel.png" height="23">&nbsp;Vidro</a></li>
-									<li><a class="dropdown-item" href="metal.html"><img src="img/metal.png" height="23">&nbsp;Metal</a></li>
-									<li><a class="dropdown-item" href="eletronico.html"><img src="img/papel.png" height="23">&nbsp;Eletrônico</a></li>
-									<li><a class="dropdown-item" href="lixoorganico.html"><img src="img/comida.png" height="23">
+		.figure-caption {
+			color: white !important;
+		}
+	</style>
+	<!--não consegui mudar a cor do caption-->
+</head>
+
+<body>
+	<div class="gruda">
+		<nav class="navbar navbar-expand-md" style="padding: 0px;">
+			<div class="container-fluid">
+				<a class="navbar-brand" href="Index.html">
+					<img src="img/simboloverde.png" height="60">&nbsp;&nbsp;Reciclagem
+				</a>
+
+				<button class="navbar-toggler navbar-dark" type="button" data-bs-toggle="offcanvas"
+					data-bs-target="#offcanvasExample" aria-controls="offcanvasExample" aria-expanded="false"
+					aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+
+				<div class="collapse navbar-collapse" id="navbarText">
+
+					<ul class="navbar-nav me-auto mb-2 mb-lg-0">
+						<li class="nav-item dropdown">
+							<a class="nav-link active dropdown-toggle dropdown-toggle-split" href="#" role="button"
+								data-bs-toggle="dropdown" aria-expanded="false">
+								Coleta Seletiva
+							</a>
+							<ul class="dropdown-menu">
+								<li>
+									<h6 class="dropdown-header">Recicláveis</h6>
+								</li>
+								<li><a class="dropdown-item" href="papel.html"><img src="img/papel.png"
+											height="23">&nbsp;Papel</a></li>
+								<li><a class="dropdown-item" href="plastico.html"><img src="img/plastico.png"
+											height="23">&nbsp;Plástico</a></li>
+								<li><a class="dropdown-item" href="vidro.html"><img src="img/papel.png"
+											height="23">&nbsp;Vidro</a></li>
+								<li><a class="dropdown-item" href="metal.html"><img src="img/metal.png"
+											height="23">&nbsp;Metal</a></li>
+								<li><a class="dropdown-item" href="eletronico.html"><img src="img/papel.png"
+											height="23">&nbsp;Eletrônico</a></li>
+								<li><a class="dropdown-item" href="lixoorganico.html"><img src="img/comida.png"
+											height="23">
 										&nbsp;Orgânico&nbsp;
 										<span class="circulo position-absolute bg-light rounded-circle">
 											<i class="icon fa-solid fa-location-dot"></i>
 										</span>
 									</a></li>
-									<li><hr class="dropdown-divider"></li>
-									<li><h6 class="dropdown-header">Não-recicláveis</h6></li>
-									<li><a class="dropdown-item" href="hospitalar.html"><img src="img/papel.png" height="23">&nbsp;Hospitalar</a></li>
-								</ul>
-							</li>
+								<li>
+									<hr class="dropdown-divider">
+								</li>
+								<li>
+									<h6 class="dropdown-header">Não-recicláveis</h6>
+								</li>
+								<li><a class="dropdown-item" href="hospitalar.html"><img src="img/papel.png"
+											height="23">&nbsp;Hospitalar</a></li>
+							</ul>
+						</li>
 
-							<li class="nav-item">
-								<a class="nav-link active" href="paises.html">Impacto do lixo</a>
-							</li>
+						<li class="nav-item">
+							<a class="nav-link active" href="paises.html">Impacto do lixo</a>
+						</li>
 
-							<li class="nav-item">
-								<a class="nav-link" href="contato.html">Contato</a>
+						<li class="nav-item">
+							<a class="nav-link" href="contato.html">Contato</a>
+						</li>
+					</ul>
+					<span class="navbar-text">
+						<button type="button" class="btn btn-light mudar-tema">
+							Mudar tema
+						</button>
+					</span>
+
+				</div>
+			</div>
+		</nav>
+	</div>
+
+	<header style="text-align: center; padding: 10px;">
+		<h1 Div style="font-size: 75px">Lixo orgânico</h1>
+		<img src="img/simbolomarrom.png" height="100">
+	</header>
+
+	<section>
+
+
+		<!--OFFCANVAS-->
+
+		<div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample"
+			aria-labelledby="offcanvasExampleLabel">
+			<div class="offcanvas-header">
+				<h5 class="offcanvas-title" id="offcanvasExampleLabel">
+					<a class="navbar-brand  position-relative" href="index.html">
+						<img src="img/simboloverde.png" height="60"> &nbsp;&nbsp;Reciclagem
+					</a>
+				</h5>
+				<button type="button" class="btn-close fecha-offcanvas" data-bs-dismiss="offcanvas"
+					aria-label="Close"></button>
+			</div>
+			<div class="offcanvas-body">
+				<div class="btn-group-vertical" role="group" aria-label="Vertical button group">
+					<div class="btn-transp">
+						<button type="button" class="btn btn-transp">
+							<a class="nav-link" href="paises.html">Impacto do lixo</a>
+						</button>
+					</div>
+
+					<div class="btn-transp">
+						<button type="button" class="btn btn-transp">
+							<a class="nav-link" href="contato.html">Contato</a>
+						</button>
+					</div>
+
+					<div class="btn-transp">
+						<button type="button" class="btn btn-transp dropdown-toggle" data-bs-toggle="dropdown"
+							aria-expanded="true">
+							Coleta Seletiva
+						</button>
+						<ul class="dropdown-menu">
+							<li>
+								<h2 class="dropdown-header">Recicláveis</h2>
 							</li>
+							<li><a class="dropdown-item" href="papel.html"><img src="img/papel.png"
+										height="23">&nbsp;Papel</a></li>
+							<li><a class="dropdown-item" href="plastico.html"><img src="img/plastico.png"
+										height="23">&nbsp;Plástico</a></li>
+							<li><a class="dropdown-item" href="vidro.html"><img src="img/papel.png"
+										height="23">&nbsp;Vidro</a></li>
+							<li><a class="dropdown-item" href="metal.html"><img src="img/metal.png"
+										height="23">&nbsp;Metal</a></li>
+							<li><a class="dropdown-item" href="eletronico.html"><img src="img/papel.png"
+										height="23">&nbsp;Eletrônico</a></li>
+							<li><a class="dropdown-item" href="lixoorganico.html"><img src="img/comida.png"
+										height="23">&nbsp;Orgânico
+									<span class="circulo position-absolute bg-light rounded-circle"> <!--BADGE-->
+										<i class="icon fa-solid fa-location-dot"></i>
+									</span></a></li>
+							<li>
+								<hr class="dropdown-divider">
+							</li>
+							<li>
+								<h6 class="dropdown-header">Não-recicláveis</h6>
+							</li>
+							<li><a class="dropdown-item" href="hospitalar.html"><img src="img/papel.png"
+										height="23">&nbsp;Hospitalar</a></li>
 						</ul>
-						<span class="navbar-text">
-							<button id="theme-toggle" type="button" class="btn btn-light" onclick="alterarEstilo()">
-								Mudar tema
-							</button>
-						</span>
-
 					</div>
 				</div>
-			</nav>
+			</div>
+
+			<span class="navbar-text-off">
+				<button id="mudar-tema" type="button" class="btn btn-light mudar-tema">
+					Mudar tema
+				</button>
+			</span>
 		</div>
+		<!--END OFFCANVAS-->
 
-		<header>
-				<h1 Div style="font-size: 75px">Lixo orgânico</h1>
-				<img src="img/simbolomarrom.png" height="100">
-		</header>
-
-		<section>
-		 
-		  <article>
+		<article>
 			<h1 id="Introd">Lixo Orgânico & Compostagem</h1>
-			<p>&nbsp;&nbsp;&nbsp;&nbsp;Compostagem é o processo biológico de valorização da matéria orgânica, seja ela de origem urbana, 
-			doméstica, industrial, agrícola ou florestal, e pode ser considerada como um tipo de reciclagem do lixo orgânico. Trata-se 
-			de um processo natural em que os micro-organismos, como fungos e bactérias, são responsáveis pela degradação de certos tipos 
-			de resíduos, transformando-a em húmus, um material muito rico em nutrientes e fértil.</p>
+			<p>&nbsp;&nbsp;&nbsp;&nbsp;Compostagem é o processo biológico de valorização da matéria orgânica, seja ela
+				de origem urbana,
+				doméstica, industrial, agrícola ou florestal, e pode ser considerada como um tipo de reciclagem do lixo
+				orgânico. Trata-se
+				de um processo natural em que os micro-organismos, como fungos e bactérias, são responsáveis pela
+				degradação de certos tipos
+				de resíduos, transformando-a em húmus, um material muito rico em nutrientes e fértil.</p>
 
 			<figure>
-				<img src="https://images.ecycle.com.br/wp-content/uploads/2018/03/29154140/coleta-seletiva-lixo-organico.jpg" class="figure-img img-fluid rounded">
-				<figcaption style="color: white;" class="figure-caption">Restos de alimentos.</figcaption>
+				<img src="https://images.ecycle.com.br/wp-content/uploads/2018/03/29154140/coleta-seletiva-lixo-organico.jpg"
+					class="figure-img img-fluid rounded">
+				<figcaption class="figure-caption">Restos de alimentos.</figcaption>
 			</figure>
-			<p>&nbsp;&nbsp;&nbsp;&nbsp;A prática feita em casa ainda faz bem para a saúde. De acordo com um estudo, o contato com uma bactéria presente no húmus 
-			pode ser usado como antidepressivo e diminui alergias, dores e náuseas.</p>
+			<p>&nbsp;&nbsp;&nbsp;&nbsp;A prática feita em casa ainda faz bem para a saúde. De acordo com um estudo, o
+				contato com uma bactéria presente no húmus
+				pode ser usado como antidepressivo e diminui alergias, dores e náuseas.</p>
 
-			<p>&nbsp;&nbsp;&nbsp;&nbsp;A compostagem ajuda na redução das sobras de alimentos, tornando-se uma solução fácil para reciclar os resíduos gerados em 
-			nossa residência.</p>
-						
-			<h1 id="coleta">A Coleta Seletiva</h1>		
-						
-			<p>&nbsp;&nbsp;&nbsp;&nbsp;A coleta seletiva de lixo orgânico existe – você provavelmente já viu lixeiras coloridas da coleta seletiva 
-			como  a palavra “orgânico” escrita no coletor marrom. Isso significa que o lixo orgânico também deve ser separado. 
-			Isso porque, quando o separamos, evitamos que ele contamine outros materiais como o plástico, por exemplo, e 
-			prejudique a reciclagem. Além disso, o próprio lixo orgânico pode ser reciclado, por isso é importante também não 
-			contaminá-lo com outros tipos de materiais para não inviabilizar sua reciclagem.</p>
+			<p>&nbsp;&nbsp;&nbsp;&nbsp;A compostagem ajuda na redução das sobras de alimentos, tornando-se uma solução
+				fácil para reciclar os resíduos gerados em
+				nossa residência.</p>
 
-			<p>&nbsp;&nbsp;&nbsp;&nbsp;Os resíduos orgânicos são recicláveis. É importante para o meio ambiente que seja feita a coleta seletiva 
-			do lixo orgânico. No retanto, separar o lixo orgânico não é garantia de que esses rejeitos serão reciclados, pois a reciclagem 
-			depende de outras questões além da separação, incluindo fatores econômicos. </p>
+			<h1 id="coleta">A Coleta Seletiva</h1>
 
-			<p>&nbsp;&nbsp;&nbsp;&nbsp;Além disso, há poucos postos de coleta que se interessam por receber descarte de restos alimentares. 
-			Normalmente os pontos de colo eta recebem restos vegetais como podas e galhos que caíram. Por isso, o lixo orgânico pode ser 
-			reaproveitado, mas apenas separar o lixo orgânico para a coleta seletiva não basta para garantir um futuro satisfatório para 
-			seus descartes.</p>
-			
+			<p>&nbsp;&nbsp;&nbsp;&nbsp;A coleta seletiva de lixo orgânico existe – você provavelmente já viu lixeiras
+				coloridas da coleta seletiva
+				como a palavra “orgânico” escrita no coletor marrom. Isso significa que o lixo orgânico também deve ser
+				separado.
+				Isso porque, quando o separamos, evitamos que ele contamine outros materiais como o plástico, por
+				exemplo, e
+				prejudique a reciclagem. Além disso, o próprio lixo orgânico pode ser reciclado, por isso é importante
+				também não
+				contaminá-lo com outros tipos de materiais para não inviabilizar sua reciclagem.</p>
+
+			<p>&nbsp;&nbsp;&nbsp;&nbsp;Os resíduos orgânicos são recicláveis. É importante para o meio ambiente que seja
+				feita a coleta seletiva
+				do lixo orgânico. No retanto, separar o lixo orgânico não é garantia de que esses rejeitos serão
+				reciclados, pois a reciclagem
+				depende de outras questões além da separação, incluindo fatores econômicos. </p>
+
+			<p>&nbsp;&nbsp;&nbsp;&nbsp;Além disso, há poucos postos de coleta que se interessam por receber descarte de
+				restos alimentares.
+				Normalmente os pontos de colo eta recebem restos vegetais como podas e galhos que caíram. Por isso, o
+				lixo orgânico pode ser
+				reaproveitado, mas apenas separar o lixo orgânico para a coleta seletiva não basta para garantir um
+				futuro satisfatório para
+				seus descartes.</p>
+
 			<h1 id="domestica">Compostagem doméstica</h1>
-			
-			<p>&nbsp;&nbsp;&nbsp;&nbsp;A coleta seletiva do lixo orgânico caseira é o primeiro passo para começar a reciclagem do lixo orgânico em casa.</p>
+
+			<p>&nbsp;&nbsp;&nbsp;&nbsp;A coleta seletiva do lixo orgânico caseira é o primeiro passo para começar a
+				reciclagem do lixo orgânico em casa.</p>
 
 			<figure>
-				<img src="https://images.ecycle.com.br/wp-content/uploads/2018/03/01223003/50-750-composteiras-domesticas-vermicompostagem-750.jpg" class="figure-img img-fluid rounded">
+				<img src="https://images.ecycle.com.br/wp-content/uploads/2018/03/01223003/50-750-composteiras-domesticas-vermicompostagem-750.jpg"
+					class="figure-img img-fluid rounded">
 				<figcaption class="figure-caption">Compostagem.</figcaption>
 			</figure>
 
-			<p>&nbsp;&nbsp;&nbsp;&nbsp;O lixo orgânico é um material de origem biológica, pode ser proveniente da vida animal ou vegetal, também conhecido como “lixo úmido”. 
-			Mas, em casa, o ideal é que seja feita a reciclagem apenas dos descartes vegetais, como cascas de banana, chá, casca de beterraba, 
-			folhas secas do quintal, etc. Estas sobras devem ser descartadas em uma composteira doméstica.</p>
+			<p>&nbsp;&nbsp;&nbsp;&nbsp;O lixo orgânico é um material de origem biológica, pode ser proveniente da vida
+				animal ou vegetal, também conhecido como “lixo úmido”.
+				Mas, em casa, o ideal é que seja feita a reciclagem apenas dos descartes vegetais, como cascas de
+				banana, chá, casca de beterraba,
+				folhas secas do quintal, etc. Estas sobras devem ser descartadas em uma composteira doméstica.</p>
 
-			<p>&nbsp;&nbsp;&nbsp;&nbsp;A compostagem doméstica é um meio pelo qual pode ser realizada a reciclagem dos descartes alimentares vegetais.</p>
-			
+			<p>&nbsp;&nbsp;&nbsp;&nbsp;A compostagem doméstica é um meio pelo qual pode ser realizada a reciclagem dos
+				descartes alimentares vegetais.</p>
+
 			<h1 id="fases">Quais são as 3 fases da compostagem?</h1>
-			
+
 			<h5>1ª) Fase mesofílica</h5>
-			
-			<p>&nbsp;&nbsp;&nbsp;&nbsp;Nessa fase da compostagem, os fungos e as bactérias mesófilas (ativas a temperaturas próximas da temperatura ambiente) 
-			começam a se proliferar na matéria orgânica aglomerada na composteira, fazendo a decomposição do lixo orgânico. Primeiro são 
-			metabolizadas as moléculas mais simples. Nessa fase, as temperaturas são moderadas (cerca de 40°C) e dura em torno de 15 dias</p>
+
+			<p>&nbsp;&nbsp;&nbsp;&nbsp;Nessa fase da compostagem, os fungos e as bactérias mesófilas (ativas a
+				temperaturas próximas da temperatura ambiente)
+				começam a se proliferar na matéria orgânica aglomerada na composteira, fazendo a decomposição do lixo
+				orgânico. Primeiro são
+				metabolizadas as moléculas mais simples. Nessa fase, as temperaturas são moderadas (cerca de 40°C) e
+				dura em torno de 15 dias</p>
 
 			<h5>2ª) Fase termofílica</h5>
-			<p>&nbsp;&nbsp;&nbsp;&nbsp;É a fase mais longa, podendo se estender por até dois meses, dependendo das características do material 
-			que está sendo compostado. Nessa fase, entram em cena os fungos e as bactérias denominados de termófilos, que são capazes de 
-			sobreviver a temperaturas entre 65°C e 70°C, à influência da maior disponibilidade de oxigênio – promovida pelo revolvimento da 
-			pilha inicial. A degradação das moléculas mais complexas e a alta temperatura ajudam na eliminação de agentes patógenos.</p>
+			<p>&nbsp;&nbsp;&nbsp;&nbsp;É a fase mais longa, podendo se estender por até dois meses, dependendo das
+				características do material
+				que está sendo compostado. Nessa fase, entram em cena os fungos e as bactérias denominados de
+				termófilos, que são capazes de
+				sobreviver a temperaturas entre 65°C e 70°C, à influência da maior disponibilidade de oxigênio –
+				promovida pelo revolvimento da
+				pilha inicial. A degradação das moléculas mais complexas e a alta temperatura ajudam na eliminação de
+				agentes patógenos.</p>
 
 			<h5>3ª) Fase da maturação</h5>
-			<p>&nbsp;&nbsp;&nbsp;&nbsp;É a última fase do processo de compostagem, podendo durar até dois meses. Nessa fase, há a diminuição 
-			da atividade microbiana, da temperatura (até se aproximar da temperatura ambiente) e da acidez. É um período de estabilização que 
-			produz um composto maturado. A maturidade do composto ocorre quando a decomposição microbiológica se completa e a matéria orgânica 
-			é transformada em húmus, livre de toxicidade, metais pesados e patógenos.</p>
+			<p>&nbsp;&nbsp;&nbsp;&nbsp;É a última fase do processo de compostagem, podendo durar até dois meses. Nessa
+				fase, há a diminuição
+				da atividade microbiana, da temperatura (até se aproximar da temperatura ambiente) e da acidez. É um
+				período de estabilização que
+				produz um composto maturado. A maturidade do composto ocorre quando a decomposição microbiológica se
+				completa e a matéria orgânica
+				é transformada em húmus, livre de toxicidade, metais pesados e patógenos.</p>
 
 
-			<p>&nbsp;&nbsp;&nbsp;&nbsp;O húmus é um material estável, rico em nutrientes e minerais, que pode ser utilizado em hortas, 
-			jardins e para fins agrícolas, como adubo orgânico, devolvendo à terra os nutrientes de que necessita e evitando o uso de 
-			fertilizantes sintéticos.</p>
-			
+			<p>&nbsp;&nbsp;&nbsp;&nbsp;O húmus é um material estável, rico em nutrientes e minerais, que pode ser
+				utilizado em hortas,
+				jardins e para fins agrícolas, como adubo orgânico, devolvendo à terra os nutrientes de que necessita e
+				evitando o uso de
+				fertilizantes sintéticos.</p>
+
 			<h1 id="composteira">O que é uma composteira?</h1>
-			<p>&nbsp;&nbsp;&nbsp;&nbsp;A composteira nada mais é do que o lugar (ou a estrutura) próprio para o depósito e a compostagem 
-			do material orgânico, onde o lixo orgânico será transformado em húmus.</p>
-			<p>&nbsp;&nbsp;&nbsp;&nbsp;A composteira pode assumir diversos formatos e tamanhos – isso depende do volume de matéria orgânica 
-			que é produzida e também do espaço livre disponível para sua alocação, mas todas têm a mesma finalidade.</p>
-			<p>&nbsp;&nbsp;&nbsp;&nbsp;As composteiras podem ser instaladas em casas ou apartamentos e possuir tamanhos e preços variados. 
-			Para além disso, o processo também pode ser realizado diretamente no solo.</p>
-			
-		  </article>
-		</section>
+			<p>&nbsp;&nbsp;&nbsp;&nbsp;A composteira nada mais é do que o lugar (ou a estrutura) próprio para o depósito
+				e a compostagem
+				do material orgânico, onde o lixo orgânico será transformado em húmus.</p>
+			<p>&nbsp;&nbsp;&nbsp;&nbsp;A composteira pode assumir diversos formatos e tamanhos – isso depende do volume
+				de matéria orgânica
+				que é produzida e também do espaço livre disponível para sua alocação, mas todas têm a mesma finalidade.
+			</p>
+			<p>&nbsp;&nbsp;&nbsp;&nbsp;As composteiras podem ser instaladas em casas ou apartamentos e possuir tamanhos
+				e preços variados.
+				Para além disso, o processo também pode ser realizado diretamente no solo.</p>
 
-		<footer>
-			<p style= "text-align: left"><img src="img/lixeiramarrom.png" height="150"></p>
-		</footer>
+		</article>
+	</section>
 
-		  <script src="js/bootstrap.bundle.min.js"></script>
-          <script src="js/mudatema.js"></script>
-          <script src="js/all.min.js"></script>
+	<footer>
+		<p style="text-align: left"><img src="img/lixeiramarrom.png" height="150"></p>
+
+		<!--BREADCRUMB-->
+		<div aria-label="breadcrumb">
+			<ol class="breadcrumb">
+				<li class="breadcrumb-item"><a href="index.html">Home</a></li>
+				<li class="breadcrumb-item"><a href="paises.html">Coleta Seletiva</a></li>
+				<li class="breadcrumb-item active" aria-current="page">Lixo Orgânico</li>
+			</ol>
+		</div>
+		<!--END BREADCRUMB-->
+
+	</footer>
+
+	<script src="js/bootstrap.bundle.min.js"></script>
+	<script src="js/mudatema.js"></script>
+	<script src="js/all.min.js"></script>
 
 
-	</body>
+</body>
+
 </html>
-
