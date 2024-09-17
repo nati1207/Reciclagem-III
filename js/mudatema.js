@@ -2,6 +2,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const buttons = document.querySelectorAll('.mudar-tema');
   const themeStylesheet = document.getElementById('theme-stylesheet');
   const navbarToggler = document.querySelector('.navbar-toggler');
+  const lists = document.querySelectorAll('.mudacor');
   const dropdown = document.querySelectorAll('.dropdown-menu');
   const tema = document.getElementById('cores');
   let escuro = false;
@@ -14,6 +15,7 @@ document.addEventListener('DOMContentLoaded', () => {
     updateButtonState(storedTheme);
     updateNavbarTogglerStyles(storedTheme);
     updateDropdownStyle(storedTheme);
+    updateListStyle(storedTheme);
   }
 
   verificarPagina();
@@ -25,12 +27,27 @@ document.addEventListener('DOMContentLoaded', () => {
       updateButtonState(newTheme);
       updateNavbarTogglerStyles(newTheme);
       updateDropdownStyle(newTheme);
+      updateListStyle(newTheme);
       escuro = newTheme === 'css/dark_css.css';
       // Salvar a preferência no localStorage
       localStorage.setItem('theme', newTheme);
       verificarPagina();
     });
   });
+
+  function updateListStyle(theme) {
+    lists.forEach(list => {
+      if (theme === 'css/main_css.css') {
+        list.classList.remove('text-bg-dark');
+        list.classList.add('text-bg-light');
+        escuro = false;
+      } else {
+        list.classList.remove('text-bg-light');
+        list.classList.add('text-bg-dark');
+        escuro = true;
+      }
+    });
+  }
 
   function updateButtonState(theme) {
     buttons.forEach(button => {
@@ -417,4 +434,24 @@ if (alertTrigger) {
     appendAlert('Tema alterado')
   })
 }
+//TABELA------------------------------------------------------------
 
+const search = document.querySelector('.input-group input'),
+    table_rows = document.querySelectorAll('tbody tr'),
+    table_headings = document.querySelectorAll('thead th');
+
+// 1. Searching for specific data of HTML table
+search.addEventListener('input', searchTable);
+
+function searchTable() {
+    table_rows.forEach((row, i) => {
+        let table_data = row.textContent.toLowerCase(),
+            search_data = search.value.toLowerCase();
+
+        row.classList.toggle('hide', table_data.indexOf(search_data) < 0);
+    })
+
+    document.querySelectorAll('tbody tr:not(.hide)').forEach((visible_row, i) => {
+        visible_row.style.backgroundColor = (i % 2 == 0) ? 'transparent' : '#0000000b';
+    });
+}

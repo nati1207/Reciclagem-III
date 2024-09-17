@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Impacto do lixo</title>
+  <meta charset="utf-8">
+  <meta charset="UTF-8">
+  <meta name="description" content="content">
+  <meta name="keywords" content="keywords">
+  <meta name="author" content="Evelyn e Natalia">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link id="theme-stylesheet" rel="stylesheet" href="css/main_css.css">
+  <link rel="stylesheet" href="css/STYLE.css">
+</head>
+
+
+
+<body>
+
+  <!--nav-->
+  <div class="gruda">
+    <nav class="navbar navbar-expand-md">
+      <div class="container-fluid">
+
+        <a class="navbar-brand" href="index.html">
+          <img src="img/simboloverde.png" height="60">&nbsp;&nbsp;Reciclagem</a>
+
+        <button class="navbar-toggler navbar-dark" type="button" data-bs-toggle="offcanvas"
+          data-bs-target="#offcanvasExample" aria-controls="offcanvasExample" aria-expanded="false"
+          aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarText">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item dropdown">
+              <a class="nav-link active" href="coletaseletiva.html">
+                Coleta Seletiva <i class="fa fa-caret-down"></i>
+                <span class="circulo position-absolute bg-light rounded-circle"> <!--BADGE-->
+                  <i class="icon fa-solid fa-location-dot"></i>
+                </span>
+              </a>
+              <ul class="dropdown-menu">
+                <li>
+                  <h6 class="dropdown-header">Recicláveis</h6>
+                </li>
+                <li><a class="dropdown-item" href="papel.html"><img src="img/papel.png" height="23">&nbsp;Papel</a></li>
+                <li><a class="dropdown-item" href="plastico.html"><img src="img/plastico.png"
+                      height="23">&nbsp;Plástico</a></li>
+                <li><a class="dropdown-item" href="vidro.html"><img src="img/papel.png" height="23">&nbsp;Vidro</a></li>
+                <li><a class="dropdown-item" href="metal.html"><img src="img/metal.png" height="23">&nbsp;Metal</a></li>
+                <li><a class="dropdown-item" href="eletronico.html"><img src="img/papel.png"
+                      height="23">&nbsp;Eletrônico</a></li>
+                <li><a class="dropdown-item" href="lixoorganico.html"><img src="img/comida.png"
+                      height="23">&nbsp;Orgânico</a></li>
+                <li>
+                  <hr class="dropdown-divider">
+                </li>
+                <li>
+                  <h6 class="dropdown-header">Não-recicláveis</h6>
+                </li>
+                <li><a class="dropdown-item" href="hospitalar.html"><img src="img/papel.png"
+                      height="23">&nbsp;Hospitalar</a></li>
+              </ul>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="contato.html">
+                &nbsp;&nbsp;&nbsp;Contato&nbsp;
+              </a>
+            </li>
+          </ul>
+          <span class="navbar-text">
+            <button type="button" class="btn btn-light mudar-tema">
+              Mudar tema
+            </button>
+          </span>
+        </div>
+      </div>
+    </nav>
+  </div>
+
+  <!--OFFCANVAS-->
+
+  <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+    <div class="offcanvas-header">
+      <h5 class="offcanvas-title" id="offcanvasExampleLabel">
+        <a class="navbar-brand  position-relative" href="index.html">
+          <img src="img/simboloverde.png" height="60"> &nbsp;&nbsp;Reciclagem
+        </a>
+      </h5>
+      <button type="button" class="btn-close fecha-offcanvas" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body">
+      <div class="btn-group-vertical" role="group" aria-label="Vertical button group">
+        <div class="btn-transp">
+          <button type="button" class="btn btn-transp">
+            <a class="nav-link" href="coletaseletiva.html">Impacto do lixo</a>
+          </button>
+        </div>
+
+        <div class="btn-transp">
+          <button type="button" class="btn btn-transp">
+            <a class="nav-link" href="contato.html">Contato
+              <span class="circulo position-absolute bg-light rounded-circle"> <!--BADGE-->
+                <i class="icon fa-solid fa-location-dot"></i>
+              </span></a>
+          </button>
+        </div>
+
+        <div class="btn-transp">
+          <button type="button" class="btn btn-transp dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="true">
+            Coleta Seletiva
+          </button>
+          <ul class="dropdown-menu">
+            <li>
+              <h2 class="dropdown-header">Recicláveis</h2>
+            </li>
+            <li><a class="dropdown-item" href="papel.html"><img src="img/papel.png" height="23">&nbsp;Papel</a></li>
+            <li><a class="dropdown-item" href="plastico.html"><img src="img/plastico.png" height="23">&nbsp;Plástico</a>
+            </li>
+            <li><a class="dropdown-item" href="vidro.html"><img src="img/papel.png" height="23">&nbsp;Vidro</a></li>
+            <li><a class="dropdown-item" href="metal.html"><img src="img/metal.png" height="23">&nbsp;Metal</a></li>
+            <li><a class="dropdown-item" href="eletronico.html"><img src="img/papel.png"
+                  height="23">&nbsp;Eletrônico</a>
+            </li>
+            <li><a class="dropdown-item" href="lixoorganico.html"><img src="img/comida.png"
+                  height="23">&nbsp;Orgânico</a>
+            </li>
+            <li>
+              <hr class="dropdown-divider">
+            </li>
+            <li>
+              <h6 class="dropdown-header">Não-recicláveis</h6>
+            </li>
+            <li><a class="dropdown-item" href="hospitalar.html"><img src="img/papel.png"
+                  height="23">&nbsp;Hospitalar</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <span class="navbar-text-off">
+      <button id="mudar-tema" type="button" class="btn btn-light mudar-tema">
+        Mudar tema
+      </button>
+    </span>
+  </div>
+  <!--END OFFCANVAS-->
+
+  <section class="body-coletaseletiva">
+    <main class="table" id="customers_table">
+      <section class="table__header">
+        <h1>O Destino correto de cada resíduo</h1>
+        <!--Barra de pesquisa-->
+        <div class="input-group">
+          <input type="search" placeholder="Search Data...">
+          <img src="img/search.png" alt="">
+        </div>
+        <!--Barra de pesquisa-->
+      </section>
+
+      <section class="table__body">
+        <table>
+          <thead>
+            <tr>
+              <th> Destino</th>
+              <th style=" color: #b30021; background-color: #D893A3;"> Plástico</th>
+              <th style="background-color: #86e49d; color: #006b21;"> Vidro</th>
+              <th style="background-color: #ebc474; color: #ba7c00;"> Metal</th>
+              <th style="background-color: #6fcaea; color: #008ec2;"> Papel</th>
+              <th style="background-color: #ba735c; color: #872200;"> Orgânico</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td> Separe para Coleta Seletiva </td>
+              <td> Sacos, CDs, disquetes, embalagens de produtos de limpeza,
+                PET (como garrafas de refrigerante), canos e tubos, plásticos
+                em geral (retire antes o excesso de sujeira)...</td>
+              <td> Garrafas de bebida, frascos em geral, potes de produtos
+                alimentícios, copos (retire antes o excesso de sujeira)... </td>
+              <td> Latas de alumínio (refrigerante, cerveja, suco), latas de
+                produtos alimentícios (óleo, leite em pó, conservas), tampas
+                de garrafa, embalagens metálicas de congelados, folhas-de-flandres... </td>
+              <td>
+                Papéis de escritório, papelão, caixas em geral, jornais, revistas,
+                livros, listas telefônicas, cadernos, cartolinas, embalagens longa vida,
+                listas telefônicas, livros...
+              </td>
+              <td> Restos de alimentos, cascas de frutas, legumes, ovos...</td>
+            </tr>
+            <tr>
+              <td> Jogue no lixo comum </td>
+              <td> Plásticos termofixos (usados na indústria eletrônica e na produção
+                de alguns computadores, telefones e eletrodomésticos), embalagens plásticas
+                metalizada (como as de salgadinhos)... </td>
+              <td> Espelhos, cristais, vidros de janelas, vidros de automóveis, lâmpadas,
+                ampolas, de medicamentos, cerâmicas, porcelanas, tubos de TV e de computadores... </td>
+              <td> Clipes, grampos, esponjas de aço, tachinhas, pregos e canos... </td>
+              <td>
+                Papel carbono, celofane, ppel vegetal, termofaz, papéis encerados ou palstificados,
+                papel higiênico, lenços de papel, guardanapos, fotografias, fitas ou etiquetas adesivas...
+              </td>
+              <td> Tudo aquilo que já teve vida animal ou vegetal pode ser reciclado e reaproveitado... </td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+    </main>
+  </section>
+
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/mudatema.js"></script>
+  <script src="js/all.min.js"></script>
+</body>
+
+
+</html>

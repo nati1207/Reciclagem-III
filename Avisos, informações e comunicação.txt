@@ -126,6 +126,10 @@ planejo colocar o alert e fazer a página de contato
  Alert de mudar tema
  Cor do resto das páginas de coleta seletiva
  start offcanvas em todas as páginas com o Badge certo
+--------------------------------------------------------------------------------------
+
+ Alterado 16/09
+coleta seletiva e contato adcionados e 90% pronto
 
 
 

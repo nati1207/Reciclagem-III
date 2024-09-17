@@ -20,18 +20,36 @@
 	margin: 3.6px 0px 0px 4.8px;
 }
 
-.alert-dismissible{
+/*ALERT*/
+.alert-dismissible {
 	color: #fff;
 	padding: 10px 50px 10px 12px;
 	margin: 0px 20px 0px 0px;
+	
 }
 
-.alert-dismissible .btn-close { /*botão de fechar alert*/
-    position: absolute;
-    z-index: 1;
-    padding: 14px;
+
+.alert-dismissible {
+	background-color: blue;
+	display: flex;
+	transition-property: background-color;
+	transition-duration: 2s;
+	transition-delay: 4s;
+	transition-timing-function: ease-in-out;
+	/*duração desse delay*/
+	/*ease-in: lento no começo, rápido/abrupto no final
+	   ease-out: rápido/abrupto no início, lento no final*/
+}
+
+.alert-dismissible .btn-close {
+	/*botão de fechar alert*/
+	position: absolute;
+	z-index: 1;
+	padding: 14px;
 	background-size: 17px;
 }
+
+/*END ALERT*/
 
 
 body {
@@ -51,7 +69,7 @@ article {
 	font-size: 18px;
 }
 
-.btn-transp{
+.btn-transp {
 	background-color: transparent;
 	border-color: #386641 !important;
 	padding: 10px;
@@ -64,11 +82,11 @@ article {
 	border: #7BB787 !important;
 }
 
-.btn-group-vertical{
+.btn-group-vertical {
 	width: 100%;
 }
 
-.nav-item{
+.nav-item {
 	max-height: 40px;
 }
 
@@ -129,7 +147,7 @@ article {
 	background: linear-gradient(40deg, #386641, #488454, #386641 70%);
 }
 
-.fecha-modal{
+.fecha-modal {
 	background-size: 30px;
 }
 
@@ -189,7 +207,7 @@ article {
 }
 
 
-.reciclagem-carousel{
+.reciclagem-carousel {
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -199,7 +217,7 @@ article {
 }
 
 @media (max-width: 750px) {
-	.reciclagem-carousel{
+	.reciclagem-carousel {
 		font-size: 85px;
 		font-weight: 10px;
 	}
@@ -232,6 +250,7 @@ article {
 .card a {
 	width: 25%;
 }
+
 /*início botão do card*/
 .boton-elegante {
 	padding: 0px 0px;
@@ -246,7 +265,7 @@ article {
 	position: relative;
 	overflow: hidden;
 	font-weight: bold;
-  }
+}
 
 .boton-elegante::after {
 	content: "";
@@ -260,20 +279,21 @@ article {
 			rgba(70, 131, 82, 0) 70%);
 	transform: scale(0);
 	transition: transform 0.5s ease;
-	
-	color:white;
+
+	color: white;
 }
 
 .boton-elegante:hover::after {
 	transform: scale(5);
-	color:white;
+	color: white;
 }
 
 .boton-elegante:hover {
-	color:white;
+	color: white;
 	border-color: #ffffff;
 	background: #24422A;
 }
+
 /*fim botão do card*/
 
 .pagination {
@@ -283,7 +303,7 @@ article {
 	margin: auto;
 }
 
-.page-item{
+.page-item {
 	cursor: pointer;
 }
 
@@ -294,7 +314,7 @@ article {
 	border: #7BB787 !important;
 }
 
-.dropdown-menu{
+.dropdown-menu {
 	color: #fff;
 	text-align: center;
 	margin: 8px;
@@ -302,37 +322,43 @@ article {
 	padding: 2px 0px 2px 0px;
 }
 
-.btn-transp :hover{
+.btn-transp :hover {
 	color: #fff !important;
 }
 
-.dropdown-header{
+.dropdown-header {
 	color: black;
 	font-weight: 700;
 }
-.offcanvas-body{
+
+.offcanvas-body {
 	padding: 0px;
 }
 
 
-.navbar-text-off{
+.navbar-text-off {
 	padding: 30px;
 }
 
-.breadcrumb{
+.breadcrumb {
 	justify-content: end;
 }
 
-.breadcrumb-item a{
+.breadcrumb-item a {
 	color: #00ca28;
 }
 
-.breadcrumb-item+.breadcrumb-item::before{
-	color: #fff;
+.breadcrumb-item+.breadcrumb-item::before {
+	color: #888;
 }
 
-.breadcrumb-item.active{
-	color: #fff;
+.breadcrumb-item.active {
+	color: #888;
+}
+
+/* hover dropdown */
+.dropdown:hover>.dropdown-menu {
+	display: block;
 }
 
 footer {
@@ -341,4 +367,243 @@ footer {
 	width: 100%;
 	height: 50px;
 	display: inline-table;
+}
+
+/*TABELA*/
+
+@media print {
+
+	.table,
+	.table__body {
+		overflow: visible;
+		height: auto !important;
+		width: auto !important;
+	}
+}
+
+.body-coletaseletiva {
+	min-height: 100vh;
+	background: url(images/html_table.jpg) center / cover;
+	/*imagem de fundo*/
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+main.table {
+	width: 82vw;
+	height: 90vh;
+	background-color: #fff5;
+	/*O 5 é o valor da transparência*/
+
+	backdrop-filter: blur(7px);
+	/*filtro de blur no fundo*/
+	box-shadow: 0 .4rem .8rem #0005;
+	border-radius: .8rem;
+
+	overflow: hidden;
+	/*não deixa o conteúdo dentro sair pra fora (overflow)*/
+}
+
+.table__header {
+	width: 100%;
+	height: 16%;
+	background-color: #fff4;
+	padding: .8rem 1rem;
+
+	display: flex;
+	justify-content: space-between;
+	/*cola metade dos itens na esquerda e a outra metade na direita, deixando um espaço no meio (space between)*/
+	align-items: center;
+}
+
+/*barra de pesquisa*/
+.table__header .input-group {
+	width: 35%;
+	height: 60%;
+	background-color: #fff5;
+	/*background estilizado*/
+	padding: 0 8px;
+	border-radius: 2rem;
+
+	display: flex;
+	justify-content: end;
+	align-items: center;
+
+	transition: .99s;
+	/*faz demorar um pouco a passagem do normal pro hover*/
+}
+
+.table__header .input-group:hover {
+	width: 45%;
+	/*antes era 35%, agora expandiu*/
+	background-color: #fff8;
+	box-shadow: 0 .1rem .4rem #0002;
+}
+
+.table__header .input-group img {
+	/*lupinha*/
+	position: relative;
+	padding: 0px;
+	background-color: transparent;
+	bottom: 14px;
+	width: 1.2rem;
+	height: 1.2rem;
+}
+
+.table__header .input-group input {
+	/*local funcional da pesquisa*/
+
+	position: relative;
+	top: 8px;
+	width: 100%;
+	padding: 0 .5rem 0 .3rem;
+	padding-right: 25px;
+	background-color: transparent;
+	/*deixar transparente pra aparecer a formatação do background estilizado*/
+	border: none;
+	outline: none;
+}
+
+/*FIM barra de pesquisa*/
+
+
+.table__body {
+	width: 95%;
+	max-height: calc(89% - 1.6rem);
+	background-color: #fffb;
+
+	margin: .8rem auto;
+	border-radius: .6rem;
+
+	overflow: auto;
+	/*aparece uma barra de rolagem para ver os itens que não couberam*/
+	overflow: overlay;
+}
+
+
+/*mudando a barra de rolagem*/
+.table__body::-webkit-scrollbar {
+	width: 0.5rem;
+	height: 0.5rem;
+}
+
+.table__body::-webkit-scrollbar-thumb {
+	border-radius: .5rem;
+	background-color: #0004;
+	visibility: hidden;
+}
+
+.table__body:hover::-webkit-scrollbar-thumb {
+	visibility: visible;
+}
+
+/*FIM mudando a barra de rolagem*/
+
+table {
+	width: 100%;
+}
+
+td img {
+	width: 36px;
+	height: 36px;
+	margin-right: .5rem;
+	border-radius: 50%;
+
+	vertical-align: middle;
+}
+
+table,
+th,
+td {
+	border-collapse: collapse;
+	/*faz as palavras grudadas com o sticky sumirem quando necessário (pra n ficar um em cima do outro)*/
+	padding: 1rem;
+	text-align: left;
+}
+
+thead th {
+	position: sticky;
+	/*faz a linha do head grudar*/
+	top: 0;
+	left: 0;
+	background-color: #d5d1defe;
+	cursor: pointer;
+	/*faz o mouse ficar com aparência pra clicar*/
+	text-transform: capitalize;
+}
+
+tbody tr:nth-child(even) {
+	background-color: #0000000b;
+	/*zebra nas linhas*/
+}
+
+tbody tr {
+	--delay: .1s;
+	/*variável do css que dá um delay*/
+	transition: .5s ease-in var(--delay), background-color 0s;
+	/*duração desse delay*/
+
+	/*ease-in: lento no começo, rápido/abrupto no final
+	   ease-out: rápido/abrupto no início, lento no final*/
+}
+
+tbody tr.hide {
+	/*quando o tr está com a classe hide (adcionada pelo js quando o valor pesquisado não bate com nenhuma das linha)*/
+	opacity: 0;
+	/*faz sumir*/
+	transform: translateX(100%);
+	/*move 100% em relação ao eixo X*/
+}
+
+tbody tr:hover {
+	background-color: #fff6 !important;
+}
+
+
+tbody tr.hide td,
+tbody tr.hide td p,
+tbody tr.hide td img {
+	/*Faz a linha que sumiu com a pesquisa (que foi adcionado o hide) Suma pra que não fique espaço a mais na barra de rolagem*/
+	width: 0;
+	height: 0;
+	padding: 0;
+	font: 0 / 0 sans-serif;
+}
+
+
+/*Mudando o Status*/
+.status {
+	/*fundo redondinho do status*/
+	padding: .4rem 0;
+	border-radius: 2rem;
+	text-align: center;
+}
+
+.status.delivered {
+	/*cor de acordo com o status (classe)*/
+	background-color: #86e49d;
+	color: #006b21;
+}
+
+.status.cancelled {
+	background-color: #d893a3;
+	color: #b30021;
+}
+
+.status.pending {
+	background-color: #ebc474;
+}
+
+.status.shipped {
+	background-color: #6fcaea;
+}
+
+/*FIM Mudando o Status*/
+
+
+@media (max-width: 1000px) {
+	td:not(:first-of-type) {
+		min-width: 12.1rem;
+	}
 }
