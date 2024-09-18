@@ -1,0 +1,29 @@
+‌Card ;
+
+‌Carousel ; 
+
+‌Buttons ; 
+
+‌Button group ; 
+
+‌Alert ; 
+
+‌List group ;
+
+‌Collapse : 
+
+‌Badge ; 
+
+‌Pagination ; 
+
+‌Table ; 
+
+‌Figure ;   
+
+‌Breadcrumb ; 
+
+‌Tooltips ; 
+
+‌Toasts ; 
+
+‌Modal ;

@@ -2,6 +2,11 @@
 	box-sizing: border-box;
 }
 
+header {
+	text-align: center; 
+	padding: 10px; 
+}
+
 .navbar-brand {
 	padding-right: 23px;
 }
@@ -10,6 +15,32 @@
 	height: 20px;
 	width: 20px;
 }
+
+.btn-toast{
+	padding: 0 10px;
+}
+ /*OFFCANVAS*/
+.fecha-offcanvas{
+	background-color: #386641; 
+}
+
+
+.dropdown-item{
+	font-weight: 400 !important;
+}
+
+.list-coletaseletiva a{
+	font-size: 16px !important;
+	font-weight: 800 !important;
+	color: #006b21;
+	padding-bottom: 0;
+}
+
+.offcanvas-body {
+	padding: 0px;
+}
+
+ /*END OFFCANVAS*/
 
 .icon {
 	height: 13px;
@@ -20,25 +51,24 @@
 	margin: 3.6px 0px 0px 4.8px;
 }
 
+/*LIST*/
+.papel-article ul .list-group-item{
+	border-bottom-width: 0.72px !important;
+	background-color: transparent; 
+	border-color: blue;
+}
+
+.first{
+	border-top-width: 0.72px !important;
+}
+/*END LIST*/
+
 /*ALERT*/
 .alert-dismissible {
 	color: #fff;
 	padding: 10px 50px 10px 12px;
 	margin: 0px 20px 0px 0px;
 	
-}
-
-
-.alert-dismissible {
-	background-color: blue;
-	display: flex;
-	transition-property: background-color;
-	transition-duration: 2s;
-	transition-delay: 4s;
-	transition-timing-function: ease-in-out;
-	/*duração desse delay*/
-	/*ease-in: lento no começo, rápido/abrupto no final
-	   ease-out: rápido/abrupto no início, lento no final*/
 }
 
 .alert-dismissible .btn-close {
@@ -57,7 +87,7 @@ body {
 }
 
 header {
-	padding: 0px;
+	padding: 0 0 20px 0;
 	text-align: center;
 	font-size: 50px;
 	border: none;
@@ -92,6 +122,7 @@ article {
 
 .nav-link {
 	text-align: center;
+	padding: 8px 8px 0 ;
 }
 
 .gruda {
@@ -216,10 +247,17 @@ article {
 	font-weight: 10px;
 }
 
-@media (max-width: 750px) {
+@media (max-width: 850px) {
 	.reciclagem-carousel {
-		font-size: 85px;
+		font-size: 75px;
 		font-weight: 10px;
+	}
+}
+
+@media (max-width: 550px) {
+	.reciclagem-carousel {
+		font-size: 55px;
+		font-weight: 10;
 	}
 }
 
@@ -228,18 +266,44 @@ article {
 
 /* início Cards*/
 
-.cards {
+.foto-perfil{
+	border-radius: 90%;
+	width: 200px;
+}
+
+.card-perfil{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.card-article{
+	padding: 30px 150px 0;
+	color: #FFF;
+	font-weight: 3;
+}
+
+.card-article {
+	background-color: #1e3f26;
+	justify-content: center;
+	text-align: center;
+	align-items: center;
+	width: 100%;
+}
+
+.cards{
 	background-color: #1e3f26;
 	display: flex;
 	justify-content: center;
 	width: 100%;
+	height: 580px;
 }
 
 .card {
 	text-align: center;
 	padding: 6px;
 	background-color: #C6A969;
-	margin: 50px 10px 50px 10px;
+	margin: 5px 10px 5px 10px;
 }
 
 .card img {
@@ -248,7 +312,8 @@ article {
 }
 
 .card a {
-	width: 25%;
+	width: 80px;
+	height: 27px;
 }
 
 /*início botão do card*/
@@ -317,7 +382,7 @@ article {
 .dropdown-menu {
 	color: #fff;
 	text-align: center;
-	margin: 8px;
+	margin: 0px;
 	width: 95%;
 	padding: 2px 0px 2px 0px;
 }
@@ -329,12 +394,8 @@ article {
 .dropdown-header {
 	color: black;
 	font-weight: 700;
+	padding: 2px;
 }
-
-.offcanvas-body {
-	padding: 0px;
-}
-
 
 .navbar-text-off {
 	padding: 30px;
@@ -605,5 +666,30 @@ tbody tr.hide td img {
 @media (max-width: 1000px) {
 	td:not(:first-of-type) {
 		min-width: 12.1rem;
+	}
+}
+
+@media (max-width: 700px) {
+	.table__header h1{
+		font-size: 24px;
+	}
+
+	.table__header .input-group{
+		width: 8%;
+		min-width: 41px;
+		height: 58%;
+		padding: 0 3px;
+	}
+
+	.table__header .input-group input{
+		padding-right: 20px;
+		padding: 0 25px 0 0;
+	}
+
+	.table__header .input-group img{
+		margin: 0 8px;
+		align-items: center;
+		display: flex;
+		justify-content: center;
 	}
 }

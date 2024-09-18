@@ -44,6 +44,14 @@ nav {
 }
 /* navbar end */
 
+.fecha-offcanvas{
+	background-color: #006b21;
+}
+
+.list-group-item{
+	color: rgb(233, 239, 247);
+}
+
 .figure-caption{
 	color: #fff;
 }

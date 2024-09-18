@@ -13,6 +13,20 @@
   <link id="theme-stylesheet" rel="stylesheet" href="css/main_css.css">
   <link rel="stylesheet" href="css/STYLE.css">
 
+  <style>
+    .formi {
+      background-color: #f8f9fa;
+      margin: auto;
+      width: 600px;
+      padding-bottom: 30px;
+      border: 1px solid #cccdce;
+      border-radius: 10px;
+    }
+    .corzinha {
+      color: #000 !important;
+    }
+  </style>
+
 </head>
 
 <body>
@@ -30,11 +44,11 @@
         </button>
 
         <div class="collapse navbar-collapse" id="navbarText">
-					<ul class="navbar-nav me-auto mb-2 mb-lg-0">
-						<li class="nav-item dropdown">
-							<a class="nav-link active" href="coletaseletiva.html">
-								Coleta Seletiva <i class="fa fa-caret-down"></i>
-							</a>
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item dropdown">
+              <a class="nav-link active" href="coletaseletiva.html">
+                Coleta Seletiva <i class="fa fa-caret-down"></i>
+              </a>
               <ul class="dropdown-menu">
                 <li>
                   <h6 class="dropdown-header">Recicláveis</h6>
@@ -42,9 +56,9 @@
                 <li><a class="dropdown-item" href="papel.html"><img src="img/papel.png" height="23">&nbsp;Papel</a></li>
                 <li><a class="dropdown-item" href="plastico.html"><img src="img/plastico.png"
                       height="23">&nbsp;Plástico</a></li>
-                <li><a class="dropdown-item" href="vidro.html"><img src="img/papel.png" height="23">&nbsp;Vidro</a></li>
+                <li><a class="dropdown-item"href="vidro.html"><img src="img/vidro.png" height="23">&nbsp;Vidro</a></li>
                 <li><a class="dropdown-item" href="metal.html"><img src="img/metal.png" height="23">&nbsp;Metal</a></li>
-                <li><a class="dropdown-item" href="eletronico.html"><img src="img/papel.png"
+                <li><a class="dropdown-item" href="eletronico.html"><img src="img/eletronico.png"
                       height="23">&nbsp;Eletrônico</a></li>
                 <li><a class="dropdown-item" href="lixoorganico.html"><img src="img/comida.png"
                       height="23">&nbsp;Orgânico</a></li>
@@ -54,49 +68,45 @@
                 <li>
                   <h6 class="dropdown-header">Não-recicláveis</h6>
                 </li>
-                <li><a class="dropdown-item" href="hospitalar.html"><img src="img/papel.png"
+                <li><a class="dropdown-item" href="hospitalar.html"><img src="img/hospitalar.png"
                       height="23">&nbsp;Hospitalar</a></li>
               </ul>
             </li>
 
             <li class="nav-item">
-              <a class="nav-link active" href="coletaseletiva.html">Impacto do lixo</a>
-            </li>
-
-            <li class="nav-item">
-              <a class="nav-link" href="contato.html">
+              <a class="nav-link active" href="contato.html">
                 Contato&nbsp;
-                <span class="position-absolute bottom-50 bg-light rounded-circle">
-                  <i style="color: black; padding-left: 6px; padding-right: 6px;" class="fa-solid fa-location-dot"></i>
+                <span class="circulo position-absolute bg-light rounded-circle"> <!--BADGE-->
+                  <i class="icon fa-solid fa-location-dot"></i>
                 </span>
               </a>
             </li>
           </ul>
+          <div id="liveAlertPlaceholder"></div>
           <span class="navbar-text">
-            <a id="liveToastBtn" href="#" role="button">
-             <i class="fa-regular fa-envelope" style="font-size: 30px; color: #888;"></i>
-            </a>
-            <div class="toast-container position-fixed bottom-0 end-0 p-3">
-              <div id="liveToast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
-                <div class="toast-header">
-                  <img src="..." class="rounded me-2" alt="...">
-                  <strong class="me-auto">Evelyn e Natália</strong>
-                  <small>agora mesmo</small>
-                  <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
-                </div>
-                <div class="toast-body">
-                  Notificação
-                </div>
-              </div>
-            </div>
-          </span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-          <span class="navbar-text">
-            <button type="button" class="btn btn-light mudar-tema">
+            <button id="mudar-tema" type="button" class="btn btn-light mudar-tema">
               Mudar tema
             </button>
           </span>
-
         </div>
+        <span class="navbar-text btn-toast">
+          <a id="liveToastBtn" role="button">
+            <i class="fa-regular fa-envelope" style="font-size: 30px; color: #888;"></i>
+          </a>
+          <div class="toast-container position-fixed bottom-0 end-0 p-3">
+            <div id="liveToast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+              <div class="toast-header">
+                <img src="..." class="rounded me-2" alt="...">
+                <strong class="me-auto">Evelyn e Natália</strong>
+                <small>agora mesmo</small>
+                <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+              </div>
+              <div class="toast-body">
+                Notificação
+              </div>
+            </div>
+          </div>
+        </span>
 
       </div>
     </nav>
@@ -123,12 +133,6 @@
         <div class="btn-group-vertical" role="group" aria-label="Vertical button group">
           <div class="btn-transp">
             <button type="button" class="btn btn-transp">
-              <a class="nav-link" href="coletaseletiva.html">Impacto do lixo</a>
-            </button>
-          </div>
-
-          <div class="btn-transp">
-            <button type="button" class="btn btn-transp">
               <a class="nav-link" href="contato.html">Contato
                 <span class="circulo position-absolute bg-light rounded-circle"> <!--BADGE-->
                   <i class="icon fa-solid fa-location-dot"></i>
@@ -141,15 +145,21 @@
               Coleta Seletiva
             </button>
             <ul class="dropdown-menu">
+              <li class="list-coletaseletiva">
+                <a class="dropdown-item" href="coletaseletiva.html">Coleta Seletiva</a>
+              </li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
               <li>
                 <h2 class="dropdown-header">Recicláveis</h2>
               </li>
               <li><a class="dropdown-item" href="papel.html"><img src="img/papel.png" height="23">&nbsp;Papel</a></li>
               <li><a class="dropdown-item" href="plastico.html"><img src="img/plastico.png"
                     height="23">&nbsp;Plástico</a></li>
-              <li><a class="dropdown-item" href="vidro.html"><img src="img/papel.png" height="23">&nbsp;Vidro</a></li>
+              <li><a class="dropdown-item"href="vidro.html"><img src="img/vidro.png" height="23">&nbsp;Vidro</a></li>
               <li><a class="dropdown-item" href="metal.html"><img src="img/metal.png" height="23">&nbsp;Metal</a></li>
-              <li><a class="dropdown-item" href="eletronico.html"><img src="img/papel.png"
+              <li><a class="dropdown-item" href="eletronico.html"><img src="img/eletronico.png"
                     height="23">&nbsp;Eletrônico</a></li>
               <li><a class="dropdown-item" href="lixoorganico.html"><img src="img/comida.png"
                     height="23">&nbsp;Orgânico</a></li>
@@ -159,7 +169,7 @@
               <li>
                 <h6 class="dropdown-header">Não-recicláveis</h6>
               </li>
-              <li><a class="dropdown-item" href="hospitalar.html"><img src="img/papel.png"
+              <li><a class="dropdown-item" href="hospitalar.html"><img src="img/hospitalar.png"
                     height="23">&nbsp;Hospitalar</a></li>
             </ul>
           </div>
@@ -175,46 +185,121 @@
 
     <article style="width: 100%;">
       <h2 style="text-align: center;">Quem somos</h2>
-      <p style="text-align: center;">Aqui ficaria algum textinho introdutório de quem somos e blablablablablabla, 
-        estudamos no grandíssimo Fernando Prestes e estamos no 1º ano de curso de 
-        desenvolvimento de sistemas, algo assim?<br>Certamente nós apoiamos a causa ecológica e praticamos 
-        a sustentabilidade e coleta seletiva, como VOCÊ deveria estar fazendo, siga o nosso ilustre exemplo. (e redes sociais)</p>
+      <p style="text-align: center;">Somos Natália e Evelyn, alunas do 1º ano do curso de Desenvolvimento de Sistemas na ETEC Fernando Prestes. 
+        Criamos este site com o objetivo de informar sobre a reciclagem e coleta seletiva, incentivando a correta separação dos resíduos e 
+        promovendo práticas sustentáveis para apoiar a causa ecológica.<br><br>
 
-        <!--card de contato-->
-        <div class="row container-fluid grid" style="display: flex; justify-content: center; align-items: center;">
-          <div class="col-2">
-            <div class="mudacor card text-bg-light" style="width: 18rem;">
-              <img src="..." class="card-img-top" alt="...">
-              <div class="card-body">
-                <h5 class="card-title">Evelyn R. Soares</h5>
-                <p class="card-text statuss" style="color: #888;"><i class="fa-regular fa-clock" style="color: #ffc60a;"></i>&nbsp;ausente</p>
-              </div>
-              <ul class="list-group list-group-flush">
-                <li class="mudacor list-group-item text-bg-light"><i class="fa-brands fa-instagram"></i>&nbsp;&nbsp;@_lynn.s__</li>
-                <li class="mudacor list-group-item text-bg-light"><i class="fa-brands fa-whatsapp"></i>&nbsp;&nbsp;98174-8198</li>
-                <li class="mudacor list-group-item text-bg-light"><i class="fa-brands fa-github"></i>&nbsp;&nbsp;lyyn09</li>
-              </ul>
+        Ficamos felizes em ouvir sua opinião! Se você tem sugestões, comentários ou deseja compartilhar algo sobre a falta de programas de 
+        sustentabilidade na sua região, estamos à disposição.<br><br>
+        
+        Além disso, seu feedback sobre o conteúdo e a aparência do site é muito importante para nós. Queremos sempre melhorar e fornecer 
+        informações úteis e acessíveis.<br><br>
+        
+        Certamente nós apoiamos a causa ecológica e praticamos
+        a sustentabilidade e coleta seletiva, como VOCÊ deveria estar fazendo, siga o nosso ilustre exemplo. (e redes
+        sociais)<br>
+        Entre em contato conosco pelas redes sociais ou e-mail:</p>
+
+      <!--card de contato-->
+      <div class="row container-fluid grid" style="display: flex; justify-content: center; align-items: center;">
+        <div class="col-2">
+          <div class="mudacor card-perfil card text-bg-light" style="width: 18rem;">
+            <img src="img/fotoperfilLYN.jpg" class="foto-perfil card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Evelyn R. Soares</h5>
+              <p class="card-text statuss" style="color: #888;"><i class="fa-regular fa-clock"
+                  style="color: #ffc60a;"></i>&nbsp;ausente</p>
             </div>
-          </div>
-          <div class="col-2">
-            <div class="mudacor card text-bg-light" style="width: 18rem;">
-              <img src="..." class="card-img-top" alt="...">
-              <div class="card-body">
-                <h5 class="card-title">Natália C. Russo Santos</h5>
-                <p class="card-text statuss" style="color: #888;"><i class="fa-regular fa-circle-check" style="color: #09e27d;"></i>&nbsp;disponível</p>
-              </div>
-              <ul class="list-group list-group-flush">
-                <li class="mudacor list-group-item text-bg-light"><i class="fa-brands fa-instagram"></i>&nbsp;&nbsp;@na.natii1207</li>
-                <li class="mudacor list-group-item text-bg-light"><i class="fa-brands fa-whatsapp"></i>&nbsp;&nbsp;99681-2819</li>
-                <li class="mudacor list-group-item text-bg-light"><i class="fa-brands fa-github"></i>&nbsp;&nbsp;nati1207</li>
-              </ul>
-            </div>
+            <ul class="list-group list-group-flush">
+              <li class="mudacor list-group-item text-bg-light"><i
+                  class="fa-brands fa-instagram"></i>&nbsp;&nbsp;@_lynn.s__</li>
+              <li class="mudacor list-group-item text-bg-light"><i
+                  class="fa-brands fa-whatsapp"></i>&nbsp;&nbsp;98174-8198</li>
+              <li class="mudacor list-group-item text-bg-light"><i class="fa-brands fa-github"></i>&nbsp;&nbsp;lyyn09
+              </li>
+            </ul>
           </div>
         </div>
+        <div class="col-2">
+          <div class="mudacor card-perfil card text-bg-light" style="width: 18rem;">
+            <img src="img/fotoperfilNAT.jpg" class=" foto-perfil card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Natália C. Russo Santos</h5>
+              <p class="card-text statuss" style="color: #888;"><i class="fa-regular fa-circle-check"
+                  style="color: #09e27d;"></i>&nbsp;disponível</p>
+            </div>
+            <ul class="list-group list-group-flush">
+              <li class="mudacor list-group-item text-bg-light"><i
+                  class="fa-brands fa-instagram"></i>&nbsp;&nbsp;@na.natii1207</li>
+              <li class="mudacor list-group-item text-bg-light"><i
+                  class="fa-brands fa-whatsapp"></i>&nbsp;&nbsp;99681-2819</li>
+              <li class="mudacor list-group-item text-bg-light"><i class="fa-brands fa-github"></i>&nbsp;&nbsp;nati1207
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
 
-      <h2 style="text-align: center;">Fale conosco</h2>
-      <p style="text-align: center;">Cadastre-se para receber notificações sobre os assuntos tratados neste site e para nos relatar algum erro, sugestão ou algo relacionado:</p>(form)
-      
+      <h2 style="text-align: center;"><br>Fale conosco</h2>
+      <p style="text-align: center;">Cadastre-se para receber notificações sobre os assuntos tratados neste site e para
+        nos relatar algum erro, sugestão ou algo relacionado:<br><br></p>
+
+      <div class="formi">
+        <!--FORM START-->
+
+        <form class="row gy-2 gx-3 align-items-center" style="justify-content: center;">
+          <div class="row g-3" style="justify-content: center;">
+            <div class="col-lg-5 col-sm-11">
+              <label class="visually-hidden" for="autoSizingInput">Name</label>
+              <input type="text" class="form-control" placeholder="nome exibido" aria-label="First name">
+            </div>
+            <div class="col-lg-5 col-sm-11">
+              <label class="visually-hidden" for="autoSizingInputGroup">Username</label>
+              <div class="input-group">
+                <div class="input-group-text">@</div>
+                <input type="text" class="form-control" id="autoSizingInputGroup" placeholder="usuário">
+              </div>
+            </div>
+          </div>
+          <div class="row g-3" style="justify-content: center;">
+            <div class="col-lg-4 col-sm-10 form-check form-switch">
+              <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault">
+              <label class="corzinha form-check-label" for="flexSwitchCheckDefault">vincular email</label>
+            </div>
+            <div class="col-lg-5 col-sm-4"></div>
+          </div>
+          <div class="row g-3" style="justify-content: center;">
+            <div class="col-lg-5 col-sm-11">
+              <label class="visually-hidden" for="autoSizingInput">Name</label>
+              <input type="text" class="form-control" placeholder="exemplo@domínio.com" aria-label="First name">
+            </div>
+            <div class="col-lg-5 col-sm-11">
+              <label class="visually-hidden" for="autoSizingInput">Name</label>
+              <input type="text" class="form-control" placeholder="senha" aria-label="First name">
+            </div>
+          </div>
+          <div class="row g-3" style="justify-content: center;">
+            <div class="col-lg-10 col-sm-11">
+              <label class="corzinha" for="autoSizingInputGroup">Faça uma doação para nosso site!</label>
+              <div class="input-group">
+                <div class="input-group-text">R$</div>
+                <input type="text" class="form-control" id="autoSizingInputGroup" placeholder="usuário">
+              </div>
+            </div>
+            <div class="col-lg-10 col-sm-11">
+              <hr>
+              <div class="form-floating">
+                <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 100px"></textarea>
+                <label for="floatingTextarea2" style="color: #888;">sugestões</label>
+              </div>
+            </div>
+          </div>
+          
+        </form>
+
+          <!--FORM END-->
+      </div>
+
     </article>
   </section>
 

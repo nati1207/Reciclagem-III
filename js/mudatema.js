@@ -48,6 +48,8 @@ document.addEventListener('DOMContentLoaded', () => {
       }
     });
   }
+  
+
 
   function updateButtonState(theme) {
     buttons.forEach(button => {

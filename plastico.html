@@ -65,11 +65,11 @@
 											<i class="icon fa-solid fa-location-dot"></i>
 										</span>
 									</a></li>
-								<li><a class="dropdown-item" href="vidro.html"><img src="img/papel.png"
+								<li><a class="dropdown-item"href="vidro.html"><img src="img/vidro.png"
 											height="23">&nbsp;Vidro</a></li>
 								<li><a class="dropdown-item" href="metal.html"><img src="img/metal.png"
 											height="23">&nbsp;Metal</a></li>
-								<li><a class="dropdown-item" href="eletronico.html"><img src="img/papel.png"
+								<li><a class="dropdown-item" href="eletronico.html"><img src="img/eletronico.png"
 											height="23">&nbsp;Eletrônico</a></li>
 								<li><a class="dropdown-item" href="lixoorganico.html"><img src="img/comida.png"
 											height="23">&nbsp;Orgânico</a></li>
@@ -79,21 +79,18 @@
 								<li>
 									<h6 class="dropdown-header">Não-recicláveis</h6>
 								</li>
-								<li><a class="dropdown-item" href="hospitalar.html"><img src="img/papel.png"
+								<li><a class="dropdown-item" href="hospitalar.html"><img src="img/hospitalar.png"
 											height="23">&nbsp;Hospitalar</a></li>
 							</ul>
 						</li>
 
-						<li class="nav-item">
-							<a class="nav-link active" href="coletaseletiva.html">Impacto do lixo</a>
-						</li>
-
-						<li class="nav-item">
-							<a class="nav-link" href="contato.html">Contato</a>
+						<li class="nav-item active">
+							<a class="nav-link active" href="contato.html">Contato</a>
 						</li>
 					</ul>
+					<div id="liveAlertPlaceholder"></div>
 					<span class="navbar-text">
-						<button type="button" class="btn btn-light mudar-tema">
+						<button id="mudar-tema" type="button" class="btn btn-light mudar-tema">
 							Mudar tema
 						</button>
 					</span>
@@ -127,11 +124,6 @@
 			</div>
 			<div class="offcanvas-body">
 				<div class="btn-group-vertical" role="group" aria-label="Vertical button group">
-					<div class="btn-transp">
-						<button type="button" class="btn btn-transp">
-							<a class="nav-link" href="coletaseletiva.html">Impacto do lixo</a>
-						</button>
-					</div>
 
 					<div class="btn-transp">
 						<button type="button" class="btn btn-transp">
@@ -145,6 +137,12 @@
 							Coleta Seletiva
 						</button>
 						<ul class="dropdown-menu">
+							<li class="list-coletaseletiva">
+								<a class="dropdown-item" href="coletaseletiva.html">Coleta Seletiva</a>
+							</li>
+							<li>
+								<hr class="dropdown-divider">
+							</li>
 							<li>
 								<h2 class="dropdown-header">Recicláveis</h2>
 							</li>
@@ -155,11 +153,11 @@
 									<span class="circulo position-absolute bg-light rounded-circle"> <!--BADGE-->
 										<i class="icon fa-solid fa-location-dot"></i>
 									</span></a></li>
-							<li><a class="dropdown-item" href="vidro.html"><img src="img/papel.png"
+							<li><a class="dropdown-item"href="vidro.html"><img src="img/vidro.png"
 										height="23">&nbsp;Vidro</a></li>
 							<li><a class="dropdown-item" href="metal.html"><img src="img/metal.png"
 										height="23">&nbsp;Metal</a></li>
-							<li><a class="dropdown-item" href="eletronico.html"><img src="img/papel.png"
+							<li><a class="dropdown-item" href="eletronico.html"><img src="img/eletronico.png"
 										height="23">&nbsp;Eletrônico</a></li>
 							<li><a class="dropdown-item" href="lixoorganico.html"><img src="img/comida.png"
 										height="23">&nbsp;Orgânico</a></li>
@@ -169,7 +167,7 @@
 							<li>
 								<h6 class="dropdown-header">Não-recicláveis</h6>
 							</li>
-							<li><a class="dropdown-item" href="hospitalar.html"><img src="img/papel.png"
+							<li><a class="dropdown-item" href="hospitalar.html"><img src="img/hospitalar.png"
 										height="23">&nbsp;Hospitalar</a></li>
 						</ul>
 					</div>
@@ -183,9 +181,9 @@
 			</span>
 		</div>
 		<!--END OFFCANVAS-->
-		
 
-		<article>
+
+		<article class="plastico-article">
 			<h1 id="Introd">Introdução</h1>
 
 			<p>&nbsp;&nbsp;&nbsp;&nbsp;O plástico é um dos principais companheiros do dia a dia da sociedade. Ele está
@@ -198,63 +196,86 @@
 			</p>
 		</article>
 
-			<!--CARD-->
-			<div class="cards">
+		<!--CARD-->
+		<article class="card-article" style="background-color: #700909;">
+			A seguir, etapas da reciclagem do plástico:
+		</article>
+		<div class="cards" style="background-color: #700909;">
 
-				<div class="card d-flex justify-content-start align-items-start" style="width: 21rem; ">
-					<img src="img/recrie-ambiental-reciclagem.png" class="card-img-top ">
-					<div class="card-body">
-						<h3 class="card-title">Recrie Ambiental</h3>
-						<p class="card-text"> Reciclam os resúdos das empresas que fazem parceria. <br>
-							Oferecem um processo seguro e sustentável para a gestão de seus documentos. <br>
-							Em Prol do recolhimento da reciclagem, da sua privacidade e a da saúde do planeta.</p>
-					</div>
-					<a href="https://gererenda.recrieambiental.com.br/" target="_blank"
-						class="btn boton-elegante">Visite</a>
+			<div class="card d-flex justify-content-start align-items-start" style="width: 21rem; ">
+				<img src="img/seleçaoplastico.png" class="card-img-top ">
+				<div class="card-body">
+					<h3 class="card-title">Seleção</h3>
+					<p class="card-text"> O primeiro passo é fazer a seleção dos produtos que foram jogados para a
+						coleta seletiva
+						e avaliar se estão em condições para seguirem às próximas etapas. <br><br>
+						Durante a seleção, também acontece a classificação e separação de produtos, levando em conta o
+						tipo de material.
+					</p>
 				</div>
-
-				<div class="card justify-content-start align-items-start d-none" style="width: 21rem; ">
-					<img src="img/resiclean ambiental.jpg" class="card-img-top">
-					<div class="card-body">
-						<h3 class="card-title">Resiclean Ambiental</h3>
-						<p class="card-text"> A Resiclean Ambiental é uma empresa especializada no gerenciamento de
-							resíduos
-							classe I (perigosos),
-							que utiliza multi tecnologias para a destinação dos mais diversos resíduos</p>
-
-					</div>
-					<a href="https://www.resiclean.com.br/" target="_blank" class="btn boton-elegante">Visite</a>
-				</div>
-
-				<div class="card justify-content-start align-items-start d-none" style="width: 21rem; ">
-					<img src="img/campolimpo.png" class="card-img-top">
-					<div class="card-body">
-						<h3 class="card-title">Campo Limpo</h3>
-						<p class="card-text"> Centro de inovação e desenvolvimento de novas tecnologias voltadas para
-							reciclagem e transformação de embalagens
-							pós-consumo de defensivos agrícolas. Faz a reciclagem das embalagens vazias lavadas
-							devolvidas
-							pelos agricultores
-							ao Sistema Campo Limpo. </p>
-
-					</div>
-					<a href="https://campolimpoplasticos.com.br/" target="_blank" class="btn boton-elegante">Visite</a>
-				</div>
-
-				<div class="card justify-content-start align-items-start d-none" style="width: 21rem; ">
-					<img src="img/yvy.jpeg" class="card-img-top">
-					<div class="card-body">
-						<h3 class="card-title">Yvy Reciclagem</h3>
-						<p class="card-text"> Fazem a captação de resíduos produtivos e materiais obsoletos para
-							destinação
-							correta com segurança e
-							responsabilidade socioambiental.</p>
-
-					</div>
-					<a href="https://www.yvyreciclagem.com.br/" target="_blank" class="btn boton-elegante">Visite</a>
-				</div>
-
 			</div>
+
+			<div class="card justify-content-start align-items-start d-none" style="width: 21rem; ">
+				<img src="img/plasticopedaços.jpeg" class="card-img-top">
+				<div class="card-body">
+					<h3 class="card-title">Moagem</h3>
+					<p class="card-text"> Após a seleção, os materiais são direcionados a um moinho, que irá triturar e
+						transformar o
+						produto plástico em matéria-prima novamente. O produto sai de lá totalmente picado.
+					</p>
+
+				</div>
+			</div>
+
+			<div class="card justify-content-start align-items-start d-none" style="width: 21rem; ">
+				<img src="img/lavagemplastico.png" class="card-img-top">
+				<div class="card-body">
+					<h3 class="card-title">Lavagem e separação</h3>
+					<p class="card-text"> Em contato com a água e aditivos para limpeza, é possível identificar os
+						fragmentos mais e
+						menos densos e fazer a separação – os mais densos irão afundar e os menos densos irão flutuar na
+						superfície. <br><br>
+						Após isso vem a secagem com grandes secadores com circulação de ar quente deixam os produtos prontos para a
+						próxima etapa.
+					</p>
+
+				</div>
+			</div>
+
+			<div class="card justify-content-start align-items-start d-none" style="width: 21rem; ">
+				<img src="img/extrusaoplastico.jpeg" class="card-img-top">
+				<div class="card-body">
+					<h3 class="card-title">Extrusão</h3>
+					<p class="card-text"> Procedimento em que se coloca o plástico quente em contato com a água fria
+						para serem resfriados. <br><br>
+						Pode acontecer também através da fundição por facas rotativas, mas novamente, tendo a água como
+						agente resfriador do produto.
+					</p>
+
+				</div>
+			</div>
+
+			<div class="card justify-content-start align-items-start d-none" style="width: 21rem; ">
+				<img src="img/moldagemplastico.jpg" class="card-img-top">
+				<div class="card-body">
+					<h3 class="card-title">Moldagem</h3>
+					<p class="card-text"> A moldagem é uma das últimas etapas da reciclagem do plástico. É nela que você
+						pode direcionar uma forma
+						para a matéria plástica e dar uma nova funcionalidade para o produto. <br> <br>
+						No sistema que faz o ensaque, o material é automaticamente pesado, embalado,
+						conferido e armazenado. Após essa etapa, então, está finalmente pronto para a venda.
+					</p>
+
+				</div>
+			</div>
+		</div>
+		<article class="card-article" style="padding: 0 150px; background-color: #700909;">
+			</div>
+			<a href="https://www.compostos.com.br/blog/etapas-da-reciclagem-do-plastico" target="_blank"
+				class="btn boton-elegante" style="margin: 10px; padding: 5px;">Fonte</a>
+			</div>
+
+
 			<!--PAGINATION-->
 			<div class="botoes-passa">
 				<ul class="pagination">
@@ -269,6 +290,7 @@
 					<li class="page-item" onclick="ativar(this,2)"><a class="page-link">2</a></li>
 					<li class="page-item" onclick="ativar(this,3)"><a class="page-link">3</a></li>
 					<li class="page-item" onclick="ativar(this,4)"><a class="page-link">4</a></li>
+					<li class="page-item" onclick="ativar(this,5)"><a class="page-link">5</a></li>
 
 					<li class="next-button page-item" onclick="Next()">
 						<a class="page-link" aria-label="Next">
@@ -278,9 +300,10 @@
 					</li>
 				</ul>
 			</div>
-			<!-- END PAGINATION-->
+		</article>
+		<!-- END PAGINATION-->
 
-			<article>
+		<article class="plastico-article">
 			<p>&nbsp;&nbsp;&nbsp;&nbsp;Dessa maneira, a reciclagem do plástico é uma das alternativas para evitar a
 				degradação do planeta, bem como criar novas
 				mercadorias, renda e oportunidades para muita gente.</p>
@@ -302,55 +325,7 @@
 				plásticos, do politereftalato de etileno (o conhecido
 				PET usado em garrafas) ao cloreto de polivinila (PVC). Já as fraldas descartáveis, os adesivos e as
 				embalagens com lâminas metalizadas,
-				como as dos bombons, não podem ser reciclados.</p>
-			<h1 id="processo">Descubra como é o processo de reciclagem (pós-consumo)</h1>
-			<p>&nbsp;&nbsp;&nbsp;&nbsp;A reciclagem do plástico é composta por três fases: coleta/separação,
-				revalorização e transformação. Na primeira,
-				cada tipo vai para um local distinto. Na revalorização, ele volta a ser matéria-prima e, posteriormente,
-				na transformação, vira um novo produto.</p>
-			<p>&nbsp;&nbsp;&nbsp;&nbsp;Assim, o processo começa com o recebimento das matérias-primas trazidas por
-				associações de catadores, empresas de
-				coleta seletiva ou sucateiros. Em seguida, é feita a triagem para a separação dos plásticos de acordo
-				com o tipo. Esse é um momento
-				importantíssimo, pois é quando o material começa a ser revalorizado.</p>
-			<p>&nbsp;&nbsp;&nbsp;&nbsp;O próximo passo é colocá-lo em um moinho, onde também pode ocorrer sua lavagem e
-				sua secagem. Pode ser, ainda,
-				que o material passe por um processo de aglutinação, em que é aquecido, aditivado e homogeneizado, de
-				forma a contribuir com a densidade na entrada
-				na extrusora, que vai fundi-lo e transformá-lo em matéria-prima novamente.</p>
-			<p>&nbsp;&nbsp;&nbsp;&nbsp;É durante o processo de extrusão que a matéria-prima é transformada, picotadas ou
-				ensacadas. Dessa forma, fica pronto
-				para ser encaminhado às fábricas de artefatos plásticos e pode ser reutilizado na forma pura, misturada
-				com resina virgem ou com outros materiais.
-				De maneira geral, os procedimentos funcionam como descritos a seguir.</p>
-			<h3 id="separacao">Separação</h3>
-			<p>&nbsp;&nbsp;&nbsp;&nbsp;Essa etapa é fundamental para assegurar que o plástico esteja em condições de
-				permanecer no sistema de reciclagem. Como
-				o material é admitido para todo tipo de uso — embalagem para alimentos, sacolas, frascos de cosméticos e
-				outros —, essa separação é muito importante.</p>
-			<h3 id="fragmentacao">Fragmentação (ou moagem)</h3>
-			<p>&nbsp;&nbsp;&nbsp;&nbsp;É quando os resíduos são direcionados ao moinho.</p>
-			<h3 id="lavagem">Lavagem e separação</h3>
-			<p>&nbsp;&nbsp;&nbsp;&nbsp;Os fragmentos (ou flakes) são lavados com água e aditivos para limpeza. Depois,
-				são separados de acordo
-				com a densidade: os materiais mais densos afundam, enquanto os mais leves ficam na superfície.</p>
-			<h3 id="secagem">Secagem</h3>
-			<p>&nbsp;&nbsp;&nbsp;&nbsp;Grandes secadores com circulação de ar quente deixam os produtos prontos para a
-				próxima etapa.</p>
-			<h3 id="extrusao">Extrusão</h3>
-			<p>&nbsp;&nbsp;&nbsp;&nbsp;O sistema de extrusão pode ser do tipo espaguete ou imerso em água. No primeiro
-				caso, o material
-				fundido sai da matriz em forma de espaguetes contínuos que são submersos em água para serem resfriados.
-				Posteriormente, eles são picotados em
-				um granulador específico.</p>
-			<p>&nbsp;&nbsp;&nbsp;&nbsp;No sistema de granulação imerso em água — ou tipo “corte na cabeça” — o material
-				fundido é cortado (granulado
-				ou peletizado) diretamente na matriz por facas rotativas e imediatamente imerso em água para ser
-				resfriado. Depois, é seco
-				em equipamentos apropriados (do tipo centrífuga).</p>
-			<p>&nbsp;&nbsp;&nbsp;&nbsp;No sistema que faz o ensaque, o material é automaticamente pesado, embalado,
-				conferido e armazenado. Após essa
-				etapa, então, está finalmente pronto para a venda.</p>
+				como as dos bombons, não podem ser reciclados.</p>			
 			<h1 id="tipos">Tipos de reciclagem</h1>
 			<p>&nbsp;&nbsp;&nbsp;&nbsp;Existem três diferentes tipos de reciclagem de plástico. Eles ocorrem antes que o
 				material seja
@@ -375,24 +350,7 @@
 			<p>&nbsp;&nbsp;&nbsp;&nbsp;Isso porque a energia existente em 1Kg de plástico é comparável à que existe em
 				1Kg de óleo combustível. O processo
 				é econômico, mas não é indicado para a reciclagem, pois a incineração reduz em até 90% o volume do
-				material.</p>
-			<h1 id="desafios">Desafios da reciclagem de plástico no Brasil</h1>
-			<p>&nbsp;&nbsp;&nbsp;&nbsp;Apesar de todas as vantagens para o meio ambiente e o setor econômico, a
-				reciclagem de plástico ainda precisa de muitos
-				avanços no Brasil e, principalmente, de novos investimentos tanto do setor público quanto do privado.
-			</p>
-			<p>&nbsp;&nbsp;&nbsp;&nbsp;Em um levantamento com 11 mil empresas da indústria nacional de transformação de
-				plástico, verificou-se que
-				somente 21% delas recicla o produto pós-consumo no país. No entanto, o dado revela uma realidade melhor
-				no setor do que em países
-				desenvolvidos, como Reino Unido, França e Finlândia.</p>
-			<p>&nbsp;&nbsp;&nbsp;&nbsp;Das 3,26 milhões de toneladas de plástico produzidas aqui em 2012 pelo
-				pós-consumo, 684 mil foram recicladas,
-				de forma a contribuir com o meio ambiente. Esse negócio rendeu R$ 2,5 bilhões em apenas um ano.</p>
-			<p>&nbsp;&nbsp;&nbsp;&nbsp;No entanto, existe um longo caminho a ser percorrido para aumentar o índice de
-				reciclagem de
-				plástico. Só assim a população e os empresários de diferentes setores da economia vão criar mais
-				consciência.</p>
+				material.</p>			
 			<br><br>
 
 		</article>

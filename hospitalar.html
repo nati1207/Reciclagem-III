@@ -42,11 +42,11 @@
 											height="23">&nbsp;Papel</a></li>
 								<li><a class="dropdown-item" href="plastico.html"><img src="img/plastico.png"
 											height="23">&nbsp;Plástico</a></li>
-								<li><a class="dropdown-item" href="vidro.html"><img src="img/papel.png"
+								<li><a class="dropdown-item"href="vidro.html"><img src="img/vidro.png"
 											height="23">&nbsp;Vidro</a></li>
 								<li><a class="dropdown-item" href="metal.html"><img src="img/metal.png"
 											height="23">&nbsp;Metal</a></li>
-								<li><a class="dropdown-item" href="eletronico.html"><img src="img/papel.png"
+								<li><a class="dropdown-item" href="eletronico.html"><img src="img/eletronico.png"
 											height="23">&nbsp;Eletrônico</a></li>
 								<li><a class="dropdown-item" href="lixoorganico.html"><img src="img/comida.png"
 											height="23">&nbsp;Orgânico</a></li>
@@ -56,7 +56,7 @@
 								<li>
 									<h6 class="dropdown-header">Não-recicláveis</h6>
 								</li>
-								<li><a class="dropdown-item" href="hospitalar.html"><img src="img/papel.png"
+								<li><a class="dropdown-item" href="hospitalar.html"><img src="img/hospitalar.png"
 											height="23">
 										&nbsp;Hospitalar&nbsp;
 										<span class="circulo position-absolute bg-light rounded-circle"> <!--BADGE-->
@@ -66,16 +66,13 @@
 							</ul>
 						</li>
 
-						<li class="nav-item">
-							<a class="nav-link active" href="coletaseletiva.html">Impacto do lixo</a>
-						</li>
-
-						<li class="nav-item">
-							<a class="nav-link" href="contato.html">Contato</a>
+						<li class="nav-item active">
+							<a class="nav-link active" href="contato.html">Contato</a>
 						</li>
 					</ul>
+					<div id="liveAlertPlaceholder"></div>
 					<span class="navbar-text">
-						<button type="button" class="btn btn-light mudar-tema">
+						<button id="mudar-tema" type="button" class="btn btn-light mudar-tema">
 							Mudar tema
 						</button>
 					</span>
@@ -86,10 +83,8 @@
 		</nav>
 	</div>
 	<header>
-		<p style="text-align: center; padding: 10px;">
 		<h1 Div style="font-size: 75px">Lixo hospitalar</h1>
 		<img src="img/simbolobranco.png" height="120">
-		</p>
 	</header>
 	<section>
 
@@ -108,11 +103,6 @@
 			</div>
 			<div class="offcanvas-body">
 				<div class="btn-group-vertical" role="group" aria-label="Vertical button group">
-					<div class="btn-transp">
-						<button type="button" class="btn btn-transp">
-							<a class="nav-link" href="coletaseletiva.html">Impacto do lixo</a>
-						</button>
-					</div>
 
 					<div class="btn-transp">
 						<button type="button" class="btn btn-transp">
@@ -126,6 +116,12 @@
 							Coleta Seletiva
 						</button>
 						<ul class="dropdown-menu">
+							<li class="list-coletaseletiva">
+								<a class="dropdown-item" href="coletaseletiva.html">Coleta Seletiva</a>
+							</li>
+							<li>
+								<hr class="dropdown-divider">
+							</li>
 							<li>
 								<h2 class="dropdown-header">Recicláveis</h2>
 							</li>
@@ -133,11 +129,11 @@
 										height="23">&nbsp;Papel</a></li>
 							<li><a class="dropdown-item" href="plastico.html"><img src="img/plastico.png"
 										height="23">&nbsp;Plástico</a></li>
-							<li><a class="dropdown-item" href="vidro.html"><img src="img/papel.png"
+							<li><a class="dropdown-item"href="vidro.html"><img src="img/vidro.png"
 										height="23">&nbsp;Vidro</a></li>
 							<li><a class="dropdown-item" href="metal.html"><img src="img/metal.png"
 										height="23">&nbsp;Metal</a></li>
-							<li><a class="dropdown-item" href="eletronico.html"><img src="img/papel.png"
+							<li><a class="dropdown-item" href="eletronico.html"><img src="img/eletronico.png"
 										height="23">&nbsp;Eletrônico</a></li>
 							<li><a class="dropdown-item" href="lixoorganico.html"><img src="img/comida.png"
 										height="23">&nbsp;Orgânico</a></li>
@@ -147,13 +143,13 @@
 							<li>
 								<h6 class="dropdown-header">Não-recicláveis</h6>
 							</li>
-							<li><a class="dropdown-item" href="hospitalar.html"><img src="img/papel.png"
+							<li><a class="dropdown-item" href="hospitalar.html"><img src="img/hospitalar.png"
 										height="23">&nbsp;Hospitalar
 									<span class="circulo position-absolute bg-light rounded-circle"> <!--BADGE-->
 										<i class="icon fa-solid fa-location-dot"></i>
 									</span></a></li>
 						</ul>
-					</div>
+					</div> 
 				</div>
 			</div>
 
@@ -164,7 +160,7 @@
 			</span>
 		</div>
 		<!--END OFFCANVAS-->
-		<article>
+		<article class="hospitalar-article">
 			<h1>Introdução</h1>
 			<p>&nbsp;&nbsp;&nbsp;&nbsp;O lixo hospitalar, também conhecido como resíduo hospitalar e resíduo de serviços
 				de saúde, engloba todos os tipos de resíduos gerados durante o atendimento a pacientes. Esses resíduos
@@ -297,7 +293,7 @@
 	</section>
 
 	<footer>
-		<p style="text-align: left"><img src="img/lixeiraverde.png" height="150">isso aqui também!!!</p>
+		<p style="text-align: left"><img src="img/lixeiraazul.png" height="150">isso aqui também!!!</p>
 
 		<!--BREADCRUMB-->
 		<div aria-label="breadcrumb">
