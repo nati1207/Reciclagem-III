@@ -277,6 +277,13 @@ article {
 	align-items: center;
 }
 
+.coll{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+}
+
 .card-article{
 	padding: 30px 150px 0;
 	color: #FFF;

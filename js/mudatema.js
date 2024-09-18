@@ -5,6 +5,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const lists = document.querySelectorAll('.mudacor');
   const dropdown = document.querySelectorAll('.dropdown-menu');
   const tema = document.getElementById('cores');
+  const forms = document.querySelectorAll('.corinha')
   let escuro = false;
 
 
@@ -16,6 +17,7 @@ document.addEventListener('DOMContentLoaded', () => {
     updateNavbarTogglerStyles(storedTheme);
     updateDropdownStyle(storedTheme);
     updateListStyle(storedTheme);
+    updateFormStyle(storedTheme);
   }
 
   verificarPagina();
@@ -28,6 +30,7 @@ document.addEventListener('DOMContentLoaded', () => {
       updateNavbarTogglerStyles(newTheme);
       updateDropdownStyle(newTheme);
       updateListStyle(newTheme);
+      updateFormStyle(newTheme);
       escuro = newTheme === 'css/dark_css.css';
       // Salvar a preferência no localStorage
       localStorage.setItem('theme', newTheme);
@@ -44,6 +47,18 @@ document.addEventListener('DOMContentLoaded', () => {
       } else {
         list.classList.remove('text-bg-light');
         list.classList.add('text-bg-dark');
+        escuro = true;
+      }
+    });
+  }
+
+  function updateFormStyle(theme) {
+    forms.forEach(form => {
+      if (theme === 'css/main_css.css') {
+        form.classList.remove('bg-dark', 'border-secondary', 'text-dark');
+        escuro = false;
+      } else {
+        form.classList.add('bg-dark', 'border-secondary', 'text-dark');
         escuro = true;
       }
     });
@@ -329,6 +344,42 @@ document.addEventListener('DOMContentLoaded', () => {
 				background-color: #dcf3d8 !important;
 			}
                 `;
+      }
+    }
+    if (nomePagina === 'contato.html') {
+      if (escuro) {
+        tema.textContent = `
+        .formi {
+      background-color: #212529;
+      margin: auto;
+      width: 600px;
+      padding-bottom: 30px;
+      border: 1px solid #1b1e22;
+      border-radius: 10px;
+    }
+    input::placeholder {
+      color: #b1b1b1 !important;
+    }
+    .simbolos {
+      background-color: #6c747c !important;
+      border: 1px solid #6c747c;
+      border-radius: 7px;
+    }
+        `
+      } else {
+        tema.textContent = `
+        .formi {
+      background-color: #f8f9fa;
+      margin: auto;
+      width: 600px;
+      padding-bottom: 30px;
+      border: 1px solid #cccdce;
+      border-radius: 10px;
+    }
+    .corzinha {
+      color: #000 !important;
+    }
+        `
       }
     }
   }

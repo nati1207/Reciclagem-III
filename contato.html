@@ -13,7 +13,7 @@
   <link id="theme-stylesheet" rel="stylesheet" href="css/main_css.css">
   <link rel="stylesheet" href="css/STYLE.css">
 
-  <style>
+  <style id="cores">
     .formi {
       background-color: #f8f9fa;
       margin: auto;
@@ -96,13 +96,12 @@
           <div class="toast-container position-fixed bottom-0 end-0 p-3">
             <div id="liveToast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
               <div class="toast-header">
-                <img src="..." class="rounded me-2" alt="...">
                 <strong class="me-auto">Evelyn e Natália</strong>
                 <small>agora mesmo</small>
                 <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
               </div>
               <div class="toast-body">
-                Notificação
+                Se inscreva para recebem notficações de conteúdo novo!
               </div>
             </div>
           </div>
@@ -202,7 +201,7 @@
 
       <!--card de contato-->
       <div class="row container-fluid grid" style="display: flex; justify-content: center; align-items: center;">
-        <div class="col-2">
+        <div class="col-md-6 col-lg-2 mb-3 coll">
           <div class="mudacor card-perfil card text-bg-light" style="width: 18rem;">
             <img src="img/fotoperfilLYN.jpg" class="foto-perfil card-img-top" alt="...">
             <div class="card-body">
@@ -220,7 +219,7 @@
             </ul>
           </div>
         </div>
-        <div class="col-2">
+        <div class="col-md-6 col-lg-2 mb-3 coll">
           <div class="mudacor card-perfil card text-bg-light" style="width: 18rem;">
             <img src="img/fotoperfilNAT.jpg" class=" foto-perfil card-img-top" alt="...">
             <div class="card-body">
@@ -251,19 +250,19 @@
           <div class="row g-3" style="justify-content: center;">
             <div class="col-lg-5 col-sm-11">
               <label class="visually-hidden" for="autoSizingInput">Name</label>
-              <input type="text" class="form-control" placeholder="nome exibido" aria-label="First name">
+              <input type="text" class="corinha text-dark bg-dark border-secondary form-control" placeholder="nome exibido" aria-label="First name">
             </div>
             <div class="col-lg-5 col-sm-11">
               <label class="visually-hidden" for="autoSizingInputGroup">Username</label>
-              <div class="input-group">
-                <div class="input-group-text">@</div>
-                <input type="text" class="form-control" id="autoSizingInputGroup" placeholder="usuário">
+              <div class="input-group simbolos">
+                <div class="input-group-text simbolos">@</div>
+                <input type="text" class="corinha form-control text-dark bg-dark border-secondary" id="autoSizingInputGroup" placeholder="usuário">
               </div>
             </div>
           </div>
           <div class="row g-3" style="justify-content: center;">
             <div class="col-lg-4 col-sm-10 form-check form-switch">
-              <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault">
+              <input class="corinha form-check-input text-dark bg-dark border-secondary" type="checkbox" role="switch" id="flexSwitchCheckDefault">
               <label class="corzinha form-check-label" for="flexSwitchCheckDefault">vincular email</label>
             </div>
             <div class="col-lg-5 col-sm-4"></div>
@@ -271,25 +270,25 @@
           <div class="row g-3" style="justify-content: center;">
             <div class="col-lg-5 col-sm-11">
               <label class="visually-hidden" for="autoSizingInput">Name</label>
-              <input type="text" class="form-control" placeholder="exemplo@domínio.com" aria-label="First name">
+              <input type="text" class="corinha form-control text-dark bg-dark border-secondary" placeholder="exemplo@domínio.com" aria-label="First name">
             </div>
             <div class="col-lg-5 col-sm-11">
               <label class="visually-hidden" for="autoSizingInput">Name</label>
-              <input type="text" class="form-control" placeholder="senha" aria-label="First name">
+              <input type="text" class="corinha form-control text-dark bg-dark border-secondary" placeholder="senha" aria-label="First name">
             </div>
           </div>
           <div class="row g-3" style="justify-content: center;">
             <div class="col-lg-10 col-sm-11">
               <label class="corzinha" for="autoSizingInputGroup">Faça uma doação para nosso site!</label>
               <div class="input-group">
-                <div class="input-group-text">R$</div>
-                <input type="text" class="form-control" id="autoSizingInputGroup" placeholder="usuário">
+                <div class="input-group-text simbolos">R$</div>
+                <input type="text" class="corinha form-control text-dark bg-dark border-secondary" id="autoSizingInputGroup" placeholder="20,00">
               </div>
             </div>
             <div class="col-lg-10 col-sm-11">
-              <hr>
+              <hr class="corzinha">
               <div class="form-floating">
-                <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 100px"></textarea>
+                <textarea class="corinha form-control text-dark bg-dark border-secondary" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 100px"></textarea>
                 <label for="floatingTextarea2" style="color: #888;">sugestões</label>
               </div>
             </div>
@@ -332,6 +331,28 @@
       toastBootstrap.show()
     })
   }
+</script>
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    const checkbox = document.getElementById('flexSwitchCheckDefault');
+    const emailInputs = document.querySelectorAll('input[type="text"][placeholder="exemplo@domínio.com"]');
+    const senhaInput = document.querySelector('input[type="text"][placeholder="senha"]'); // Seleciona o campo de senha
+
+    checkbox.addEventListener('change', () => {
+      const isChecked = checkbox.checked;
+      emailInputs.forEach(input => {
+        input.disabled = !isChecked; // Habilita se o checkbox estiver marcado
+      });
+      senhaInput.disabled = !isChecked; // Habilita o campo de senha se o checkbox estiver marcado
+    });
+
+    // Inicializa o estado ao carregar a página
+    const isChecked = checkbox.checked;
+    emailInputs.forEach(input => {
+      input.disabled = !isChecked;
+    });
+    senhaInput.disabled = !isChecked; // Inicializa o estado do campo de senha
+  });
 </script>
 
 <script src="js/all.min.js"></script>
